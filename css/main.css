@@ -1019,9 +1019,11 @@ header.fixed-header {
 .header.fixed-header .navbar-nav li.get_link a {
   padding: 1.3rem 10px;
 }
+/*
 .header.fixed-header .navbar-nav li a {
   padding: 1.3rem 0;
 }
+*/
 .header.fixed-header .search-button {
   top: 10px;
 }
