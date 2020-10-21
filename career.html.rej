@@ -1,0 +1,9 @@
+diff a/career.html b/career.html	(rejected hunks)
+@@ -2,6 +2,7 @@
+  <html lang="en">
+ +
+  <head itemscope itemtype="https://schema.org/WebSite">
+++<<<<<<< Updated upstream
+ +  <meta charset="utf-8">
+ +  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ +  <meta name="author" content="">
