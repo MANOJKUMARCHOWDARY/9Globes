@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Header</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+ 
+    
+    <style>
+        .header {
+            z-index: 3;
+        }
+
+        .header {
+            position: absolute;
+            left: 0;
+            right: 0;
+            background: #f9f9f9;
+            top: 0;
+        }
+
+        .logo {
+            margin: 10px 0 0;
+            display: inline-block;
+        }
+
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+        .header .collapse {
+            display: block;
+            margin-right: 0;
+        }
+
+        .header .navbar-nav {
+            display: inline-block;
+        }
+
+        .header .navbar-nav li {
+            padding: 0 .8rem;
+            display: inline-block;
+        }
+
+        .header .navbar-nav li a {
+            font-weight: 500;
+            position: relative;
+            padding: 2.3rem 0;
+            letter-spacing: 1.2px;
+            display: block;
+        }
+
+        a {
+            color: #231f20;
+            -webkit-transition: color .3s, background-color .3s;
+            -moz-transition: color .3s, background-color .3s;
+            -o-transition: color .3s, background-color .3s;
+            transition: color .3s, background-color .3s;
+            -webkit-transition: all .5s cubic-bezier(.215, .61, .355, 1);
+            -moz-transition: all .5s cubic-bezier(.215, .61, .355, 1);
+            -o-transition: all .5s cubic-bezier(.215, .61, .355, 1);
+            transition: all .5s cubic-bezier(.215, .61, .355, 1);
+            outline: 0;
+        }
+
+        .cl-effect-12 .menu a::after,
+        .cl-effect-12 .menu a::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 70px;
+            height: 70px;
+            border: 2px solid rgb(255, 180, 0, .15);
+            border-radius: 50%;
+            content: '';
+            opacity: 0;
+            -webkit-transition: -webkit-transform .3s, opacity .3s;
+            -moz-transition: -moz-transform .3s, opacity .3s;
+            transition: transform .3s, opacity .3s;
+            -webkit-transform: translateX(-50%) translateY(-50%) scale(.2);
+            -moz-transform: translateX(-50%) translateY(-50%) scale(.2);
+            transform: translateX(-50%) translateY(-50%) scale(.2);
+        }
+
+        .cl-effect-12 .menu a::after {
+            width: 60px;
+            height: 60px;
+            border-width: 6px;
+            -webkit-transform: translateX(-50%) translateY(-50%) scale(.8);
+            -moz-transform: translateX(-50%) translateY(-50%) scale(.8);
+            transform: translateX(-50%) translateY(-50%) scale(.8);
+        }
+
+        .header .navbar-nav li.get_link {
+            position: relative;
+            margin-left: 20px;
+            margin-right: 0px;
+        }
+
+        .header .navbar-nav li.get_link a {
+            padding: 2.3rem 10px;
+        }
+
+        .header .navbar-nav li.get_link a span {
+            color: #000;
+            display: block;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header .navbar-nav li.get_link a:after {
+            background-color: #ffb400;
+            position: absolute;
+            content: "";
+            left: -15px;
+            right: -15px;
+            top: 25px;
+            bottom: 25px;
+            border-radius: 30px;
+        }
+
+        .header .navbar-nav li a:hover {
+            color: #ffb400;
+            text-decoration: none;
+        }
+
+        .header .navbar-nav li.get_link a:hover:after {
+            background: #07bd6d;
+        }
+
+        .header .navbar-nav li.get_link a:hover span {
+            color: #fff;
+        }
+
+        .cl-effect-12 .menu a:focus::after,
+        .cl-effect-12 .menu a:focus::before,
+        .cl-effect-12 .menu a:hover::after,
+        .cl-effect-12 .menu a:hover::before {
+            opacity: 1;
+            -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+            -moz-transform: translateX(-50%) translateY(-50%) scale(1);
+            transform: translateX(-50%) translateY(-50%) scale(1);
+        }
+
+        a:focus,
+        a:hover,
+        button:focus {
+            color: #f9c420;
+            text-decoration: none;
+            outline: 0 !important;
+        }
+
+        .cl-effect-12 .menu a:focus::after,
+        .cl-effect-12 .menu a:focus::before,
+        .cl-effect-12 .menu a:hover::after,
+        .cl-effect-12 .menu a:hover::before {
+            opacity: 1;
+            -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+            -moz-transform: translateX(-50%) translateY(-50%) scale(1);
+            transform: translateX(-50%) translateY(-50%) scale(1);
+        }
+
+        .header.fixed-header {
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        header.fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header sticky-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12"> <a href="index.html" class="logo"><img src="digital-lyncs-devops-python-digital-marketing-training-hyderabad.png" alt="Digital Lync- Best AWS, DevOps, Python, Digital Marketing Training Institute" title="Digital Lync- Best AWS, DevOps, Python, Digital Marketing Training Institute"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class=""></span> <span class=""></span> <span class=""></span></button>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-12" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
+                    <nav class="collapse navbar-collapse collapse text-right" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav cl-effect-12">
+                            <li class="menu "><a href="courses.html" itemprop="url"><span itemprop="name">Courses</span></a></li>
+                            <li class="menu"><a href="programs.html" itemprop="url"><span itemprop="name">Programs</span></a></li>
+                            <li class="menu"><a href="job-ready-program.html" itemprop="url"><span itemprop="name">Job Ready Program</span></a></li>
+                            <li class="menu"><a href="career.html" itemprop="url"><span itemprop="name">Career Support</span></a></li>
+
+                            <li class="menu"><a href="#" itemprop="url" target="_blank"><span itemprop="name">Sign In</span></a></li>
+                            <li class="get_link"><a href="#" data-toggle="modal" data-target="#get_trained" itemprop="url"> <span itemprop="name">Get Skilled</span> </a></li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </header>
+       <script src="css/jquery.min.js"></script>
+    <script src="css/popper.min.js"></script>
+    <script src="css/bootstrap.min.js"></script>
+</body>
+
+</html>
