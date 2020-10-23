@@ -4594,7 +4594,7 @@ body {
   font-size: 20px;
 }
 .cources_page .courceminh .pro-card .cource_count p {
-  min-height: 140px !important;
+  min-height: 145px !important;
 }
 .heading-1,
 .keycol h5 {
@@ -5135,7 +5135,22 @@ body {
     font-size: 11px;
   }
 }
+/* ------------------tablet view-----------------> */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .awscol .testmonial_mid {
+    margin: 0;
+  }
+  .keycol p {
+    font-size: 14px;
+    margin: 0 0 0 0;
+  }
+}
+
+/* ------------------mobile view-----------------> */
 @media (min-width: 320px) and (max-width: 767px) {
+  .owl-item.active {
+    width: 310px !important;
+  }
   .title-4 {
     font-size: 25px;
   }
@@ -5607,7 +5622,7 @@ body {
   padding: 0;
   list-style-type: none;
   font-size: 14px;
-  color: #22;
+  /* color: #22; */
 }
 .curriculam-points li {
   display: block;
