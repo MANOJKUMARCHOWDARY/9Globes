@@ -24,7 +24,7 @@
     <header class="header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12"> <a href="index.html" class="9Globeslogo"><img src="images/9globes.jpg" alt="9Golbes Technologies" title="9Golbes Technologies" /></a>
+                <div class="col-lg-3 col-md-3 col-sm-12"> <a href="index.html"  class="9Globeslogo"><img src="images/9globes.jpg" alt="9Golbes Technologies" title="9Golbes Technologies" /></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class=""></span> <span class=""></span> <span class=""></span></button>
                 </div>
                 <div class="col-lg-9 col-md-9 col-sm-12" itemscope itemtype="https://schema.org/SiteNavigationElement">
@@ -496,6 +496,9 @@
             </div>
         </div>
     </div>
+    <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+    </div>
     <a class="btn_caller fade-in one animated zoomIn" href="javascript:void(0)"> <img src="images/call_o_o.png" alt="9Golbes Technologies" title="9Golbes Technologies"></a>
     <div id="modalone" class="cources_video modal fade" role="dialog">
         <div class="modal-dialog">
@@ -580,6 +583,7 @@
     <script src="js/main-home.js"></script>
     <script src="js/getin-form.js"></script>
     <!-- Chatra {literal} -->
+<<<<<<< Updated upstream
     <script>
         (function(d, w, c) {
             w.ChatraID = '7risZvfLfkzFErnmi';
@@ -593,6 +597,42 @@
         })(document, window, 'Chatra');
     </script>
     <!-- /Chatra {/literal} -->
+=======
+<script>
+    (function(d, w, c) {
+        w.ChatraID = '7risZvfLfkzFErnmi';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
+<script>
+    //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- /Chatra {/literal} -->
+>>>>>>> Stashed changes
 </body>
 
 </html>

@@ -260,8 +260,7 @@ $(document).ready(function () {
           return this.stop();
         }
       }
-     };
-
+    };
     WOW.prototype.offsetTop = function (element) {
       var top;
       top = element.offsetTop;
