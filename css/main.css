@@ -147,7 +147,7 @@ img {
 }
 .slider-content ul li {
   padding: 0 0 5px 30px;
-  background: url(../images/tick-mark.png);
+/*  background: url(../images/tick-mark.png);*/
   background-repeat: no-repeat;
   color: #fff;
   line-height: initial;
@@ -2399,7 +2399,7 @@ header.fixed-header {
   display: block;
 }
 .related_col .owl-next {
-  background-image: url(../images/right-arrow.png) !important;
+/*  background-image: url(../images/right-arrow.png) !important;*/
   width: 24px;
   height: 44px;
   position: absolute;
@@ -2408,7 +2408,7 @@ header.fixed-header {
   margin-top: -22px;
 }
 .related_col .owl-prev {
-  background-image: url(../images/left-arrow.png) !important;
+/*  background-image: url(../images/left-arrow.png) !important;*/
   width: 24px;
   height: 44px;
   position: absolute;
@@ -2544,7 +2544,7 @@ header.fixed-header {
   bottom: 166px;
   right: 17px;
   z-index: 99999999;
-  background: url(../images/texture_background_5.png) repeat;
+/*  background: url(../images/texture_background_5.png) repeat;*/
   background: #fff;
   display: none;
   border-bottom: 1px solid #e2dfdf;
@@ -2786,7 +2786,7 @@ header.fixed-header {
   .slideone,
   .slidethree,
   .slidetwo {
-    background-image: url(../images/banner_bg.jpg);
+/*    background-image: url(../images/banner_bg.jpg);*/
     background-repeat: repeat-x;
   }
   .allCoursesBanner {
@@ -3563,16 +3563,18 @@ header.fixed-header {
   color: #2d2d2d;
 }
 .bigdata_maincol .slider-content ul li {
-  background: url(../images/tick-mark-dark.png);
+/*  background: url(../images/tick-mark-dark.png);*/
   background-repeat: no-repeat;
   background-position: 0 5px;
 }
+/*
 .bigdata_maincol .student-enroll:after {
   background: url(../images/student-icon-dark.png);
 }
 .bigdata_maincol .duration:after {
   background: url(../images/timer-icon-dark.png);
 }
+*/
 .bigdata_maincol .train-mid {
   border-left: 1px solid #debb30;
 }
@@ -3586,16 +3588,18 @@ header.fixed-header {
   color: #2d2d2d;
 }
 .python_col .slider-content ul li {
-  background: url(../images/tick-mark-dark.png);
+/*  background: url(../images/tick-mark-dark.png);*/
   background-repeat: no-repeat;
   background-position: 0 5px;
 }
+/*
 .python_col .student-enroll:after {
   background: url(../images/student-icon-dark.png);
 }
 .python_col .duration:after {
   background: url(../images/timer-icon-dark.png);
 }
+*/
 .bigdata_maincol .train-mid {
   border-left: 1px solid #debb30;
 }
@@ -3609,16 +3613,18 @@ header.fixed-header {
   color: #2d2d2d;
 }
 .angular_col .slider-content ul li {
-  background: url(../images/tick-mark-dark.png);
+/*  background: url(../images/tick-mark-dark.png);*/
   background-repeat: no-repeat;
   background-position: 0 5px;
 }
+/*
 .angular_col .student-enroll:after {
   background: url(../images/student-icon-dark.png);
 }
 .angular_col .duration:after {
   background: url(../images/timer-icon-dark.png);
 }
+*/
 .bigdata_maincol .train-mid {
   border-left: 1px solid #debb30;
 }
@@ -3635,7 +3641,7 @@ header.fixed-header {
 }
 .form-loader {
   display: none;
-  background-image: url(../images/ajax-loader.gif);
+/*  background-image: url(../images/ajax-loader.gif);*/
   width: 16px;
   height: 16px;
   border: none;
@@ -3901,12 +3907,12 @@ body.game-development-col .happy_partners .heading-9 {
   color: #aaa;
 }
 body.game-development-col .happy_partners .owl-next {
-  background-image: url(../images/arrow-right_w.png) !important;
+/*  background-image: url(../images/arrow-right_w.png) !important;*/
   opacity: 0.5;
   width: 21px;
 }
 body.game-development-col .happy_partners .owl-prev {
-  background-image: url(../images/arrow-left_w.png) !important;
+/*  background-image: url(../images/arrow-left_w.png) !important;*/
   opacity: 0.5;
   width: 20px;
 }
@@ -3920,7 +3926,7 @@ body.game-development-col .happy_partners .owl-prev {
   bottom: 0;
   width: 45%;
   content: "";
-  background-image: url(../images/game-developmenthyderabad.jpg);
+/*  background-image: url(../images/game-developmenthyderabad.jpg);*/
   background-size: cover;
   background-position: center;
 }
@@ -4085,15 +4091,15 @@ body.game-development-col .card {
   border: 1px solid #666;
 }
 .design-slider.graphic-bnr:after {
-  background-image: url(../images/designing-course.jpg);
+/*  background-image: url(../images/designing-course.jpg);*/
 }
 .design-slider.gaming-cource-banner:after {
-  background-image: url(../images/game-dev-banner.jpg);
+/*  background-image: url(../images/game-dev-banner.jpg);*/
   background-position: left 0;
   width: 65%;
 }
 .design-slider.threed-anim-banner:after {
-  background-image: url(../images/3d-courses-banner.jpg);
+/*  background-image: url(../images/3d-courses-banner.jpg);*/
   background-position: left 0;
   width: 65%;
 }
@@ -4531,7 +4537,7 @@ body {
   padding: 0 !important;
 }
 .ftrtop {
-  background: url(../images/kickbg.jpg);
+/*  background: url(../images/kickbg.jpg);*/
   background-size: cover !important;
   padding: 60px 0;
   text-align: center;
@@ -4573,9 +4579,11 @@ body {
 .cources_video .modal-dialog {
   top: 90px;
 }
+/*
 .ftrtop.devtop {
   background: url(../images/kickbgdev.jpg);
 }
+*/
 .ftrtop.devtop h5 {
   color: #fff;
 }
@@ -5723,12 +5731,14 @@ body {
   background: #09a360;
   color: #fff;
 }
+/*
 .businessbanner:after {
   background: url(../images/inerbanner.jpg);
-}
+}   
 .hrbanner:after {
   background: url(../images/himg.JPG);
 }
+*/
 .buttonslink a {
   padding: 5px 20px 7px;
 }
@@ -5838,9 +5848,11 @@ body {
 .googleplayicon {
   margin: 20px 0 0 -10px;
 }
+/*
 .ftrtop.uiuxpgftr {
   background: url(../images/kickbgdev.jpg);
 }
+*/
 .ftrtop.uiuxpgftr h5 {
   color: #fff;
 }
