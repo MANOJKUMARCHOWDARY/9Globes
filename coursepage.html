@@ -4794,7 +4794,6 @@
                   href="#testmonial"
                   data-slide="prev"
                 >
-                  
                 </a>
                 <a
                   class="right carousel-control"
@@ -5134,19 +5133,37 @@
               <label> Email <sup>*</sup> </label>
               <input type="text" class="" id="email" name="email" required="" />
 
-                        <input type="hidden" class="" id="technology" name="technology" value="Data Science Training">
-                        <label for="message">Message</label>
-                        <input  type="text" class="" name="message" placeholder="Write something.." style="height:80px">
-                        
-                        <button type="submit" class="btn btn-success ">Submit </button>
+              <input
+                type="hidden"
+                class=""
+                id="technology"
+                name="technology"
+                value="Data Science Training"
+              />
+              <label for="message">Message</label>
+              <input
+                type="text"
+                class=""
+                name="message"
+                placeholder="Write something.."
+                style="height: 80px"
+              />
 
-                        <div id="success_message" style="width:100%; height:100%; display:none; ">
-                            <h3>Sent your message successfully!</h3>
-                        </div>
-                        <div id="error_message" style="width:100%; height:100%; display:none; ">
-                            <h3>Error</h3> Sorry there was an error sending your form.
-                        </div>
+              <button type="submit" class="btn btn-success">Submit</button>
 
+              <div
+                id="success_message"
+                style="width: 100%; height: 100%; display: none"
+              >
+                <h3>Sent your message successfully!</h3>
+              </div>
+              <div
+                id="error_message"
+                style="width: 100%; height: 100%; display: none"
+              >
+                <h3>Error</h3>
+                Sorry there was an error sending your form.
+              </div>
 
               <div
                 id="success_message"
@@ -5903,17 +5920,19 @@
     <script src="js/main-home.js"></script>
     <script src="js/getin-form.js"></script>
     <script>
-    (function(d, w, c) {
-        w.ChatraID = '7risZvfLfkzFErnmi';
-        var s = d.createElement('script');
-        w[c] = w[c] || function() {
+      (function (d, w, c) {
+        w.ChatraID = "7risZvfLfkzFErnmi";
+        var s = d.createElement("script");
+        w[c] =
+          w[c] ||
+          function () {
             (w[c].q = w[c].q || []).push(arguments);
-        };
+          };
         s.async = true;
-        s.src = 'https://call.chatra.io/chatra.js';
+        s.src = "https://call.chatra.io/chatra.js";
         if (d.head) d.head.appendChild(s);
-    })(document, window, 'Chatra');
-</script>
-<!-- /Chatra {/literal} -->
+      })(document, window, "Chatra");
+    </script>
+    <!-- /Chatra {/literal} -->
   </body>
 </html>

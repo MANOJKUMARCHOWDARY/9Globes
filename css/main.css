@@ -526,7 +526,7 @@ img {
   padding: 25px 25px 0;
 }
 .related-card-cnt h4 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
   text-align: center;
 }
@@ -1318,7 +1318,7 @@ header.fixed-header {
   width: 20px;
   height: 14px;
   position: absolute;
-  right: 0;
+  right: -30px;
   top: 55px;
 }
 .owl-prev {
@@ -2267,7 +2267,7 @@ header.fixed-header {
 }
 .cources_page.related_col .pro-card p {
   margin: 0 0 0px;
-  min-height: 100px;
+  min-height: 140px;
   text-align: center;
 }
 .cources_page .pro-card {
@@ -2399,7 +2399,7 @@ header.fixed-header {
   display: block;
 }
 .related_col .owl-next {
-  /*  background-image: url(../images/right-arrow.png) !important;*/
+  background-image: url(../images/right-arrow.png) !important;
   width: 24px;
   height: 44px;
   position: absolute;
@@ -2408,11 +2408,11 @@ header.fixed-header {
   margin-top: -22px;
 }
 .related_col .owl-prev {
-  /*  background-image: url(../images/left-arrow.png) !important;*/
+  background-image: url(../images/left-arrow.png) !important;
   width: 24px;
   height: 44px;
   position: absolute;
-  left: -60px;
+  left: -50px;
   top: 50%;
   margin-top: -22px;
 }
@@ -2758,10 +2758,10 @@ header.fixed-header {
   min-height: 145px;
 }
 .cources_page.related_col .pro-card .cource_count p {
-  min-height: 120px;
+  min-height: 140px;
 }
 .cources_page.related_col .pro-card .powerbi p {
-  min-height: 200px;
+  min-height: 220px;
 }
 .more_popleft img {
   min-height: 400px;
@@ -3392,6 +3392,35 @@ header.fixed-header {
     font-size: 11px;
     padding: 0 !important;
   }
+
+  .card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    width: 70vw;
+  }
+
+  .related_col .owl-prev {
+    background-image: url(../images/left-arrow.png) !important;
+    width: 24px;
+    height: 44px;
+    position: absolute;
+    left: -34px;
+    top: 50%;
+    margin-top: -22px;
+  }
+
+  .related_col .owl-next {
+    background-image: url(../images/right-arrow.png) !important;
+    width: 24px;
+    height: 44px;
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    margin-top: -22px;
+  }
+
   .related-card-cnt h4 {
     font-size: 21px;
     font-weight: 400;
@@ -5159,12 +5188,21 @@ body {
   .slider_text h2 {
     font-size: 22px;
   }
+
+  .card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    width: 58vw;
+  }
   .header .navbar-nav li a {
     font-size: 11px;
   }
   .related_col {
     padding: 15px !important;
   }
+
   .card-body {
     padding: 0;
   }
@@ -5193,7 +5231,7 @@ body {
   .cources_page.related_col .pro-card p {
     margin: 0 0 20px;
     min-height: 120px;
-    height: 120px;
+    height: 130px;
     overflow-y: scroll;
   }
   .cources_page .courceminh .pro-card .cource_count p {
