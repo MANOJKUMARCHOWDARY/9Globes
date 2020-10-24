@@ -1,69 +1,89 @@
- 
- 
-   jQuery(document).ready(function($) {
-              $('.loop').owlCarousel({
-               
-                items: 3,
-				center: true,
-                loop: true,
-				 nav:true,
-                margin: 10,
-                responsive: {
-                 0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:3
-        }
-				  
-                }
-              });
-               
-            });
-   
-    
-   <!--   -->
-   
-    $(document).ready(function(){
-        // Add minus icon for collapse element which is open by default
-        $(".faq_col .collapse.show").each(function(){
-        	$(this).prev(".card-header").find(".fa").addClass("fa-angle-down").removeClass("fa-angle-up");
-        });
-        
-        // Toggle plus minus icon on show hide of collapse element
-        $(".faq_col .collapse").on('show.bs.collapse', function(){
-        	$(this).prev(".card-header").find(".fa").removeClass("fa-angle-down").addClass("fa-angle-up");
-        }).on('hide.bs.collapse', function(){
-        	$(this).prev(".card-header").find(".fa").removeClass("fa-angle-up").addClass("fa-angle-down");
-        });
-    });
-	
-	<!--     -->
-	
-	 $(document).ready(function(){
-        // Add minus icon for collapse element which is open by default
-        $(".cource_col .collapse.show").each(function(){
-        	$(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
-        });
-        
-        // Toggle plus minus icon on show hide of collapse element
-        $(".cource_col .collapse").on('show.bs.collapse', function(){
-        	$(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
-        }).on('hide.bs.collapse', function(){
-        	$(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
-        });
-    });
-	 
-	 <!--       -->
-	 
-	    (function () {
-  var Util,
-  __bind = function (fn, me) {return function () {return fn.apply(me, arguments);};};
+jQuery(document).ready(function ($) {
+  $(".loop").owlCarousel({
+    items: 3,
+    center: true,
+    loop: true,
+    nav: true,
+    margin: 10,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  });
+});
 
-  Util = function () {
+$(document).ready(function () {
+  // Add minus icon for collapse element which is open by default
+  $(".faq_col .collapse.show").each(function () {
+    $(this)
+      .prev(".card-header")
+      .find(".fa")
+      .addClass("fa-angle-down")
+      .removeClass("fa-angle-up");
+  });
+
+  // Toggle plus minus icon on show hide of collapse element
+  $(".faq_col .collapse")
+    .on("show.bs.collapse", function () {
+      $(this)
+        .prev(".card-header")
+        .find(".fa")
+        .removeClass("fa-angle-down")
+        .addClass("fa-angle-up");
+    })
+    .on("hide.bs.collapse", function () {
+      $(this)
+        .prev(".card-header")
+        .find(".fa")
+        .removeClass("fa-angle-up")
+        .addClass("fa-angle-down");
+    });
+});
+
+$(document).ready(function () {
+  // Add minus icon for collapse element which is open by default
+  $(".cource_col .collapse.show").each(function () {
+    $(this)
+      .prev(".card-header")
+      .find(".fa")
+      .addClass("fa-minus")
+      .removeClass("fa-plus");
+  });
+
+  // Toggle plus minus icon on show hide of collapse element
+  $(".cource_col .collapse")
+    .on("show.bs.collapse", function () {
+      $(this)
+        .prev(".card-header")
+        .find(".fa")
+        .removeClass("fa-plus")
+        .addClass("fa-minus");
+    })
+    .on("hide.bs.collapse", function () {
+      $(this)
+        .prev(".card-header")
+        .find(".fa")
+        .removeClass("fa-minus")
+        .addClass("fa-plus");
+    });
+});
+
+(function () {
+  var Util,
+    __bind = function (fn, me) {
+      return function () {
+        return fn.apply(me, arguments);
+      };
+    };
+
+  Util = (function () {
     function Util() {}
 
     Util.prototype.extend = function (custom, defaults) {
@@ -78,20 +98,21 @@
     };
 
     Util.prototype.isMobile = function (agent) {
-      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(agent);
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        agent
+      );
     };
 
     return Util;
+  })();
 
-  }();
-
-  this.WOW = function () {
+  this.WOW = (function () {
     WOW.prototype.defaults = {
-      boxClass: 'wow',
-      animateClass: 'animated',
+      boxClass: "wow",
+      animateClass: "animated",
       offset: 0,
-      mobile: true };
-
+      mobile: true,
+    };
 
     function WOW(options) {
       if (options == null) {
@@ -107,10 +128,13 @@
     WOW.prototype.init = function () {
       var _ref;
       this.element = window.document.documentElement;
-      if ((_ref = document.readyState) === "interactive" || _ref === "complete") {
+      if (
+        (_ref = document.readyState) === "interactive" ||
+        _ref === "complete"
+      ) {
         return this.start();
       } else {
-        return document.addEventListener('DOMContentLoaded', this.start);
+        return document.addEventListener("DOMContentLoaded", this.start);
       }
     };
 
@@ -126,16 +150,16 @@
             box = _ref[_i];
             this.applyStyle(box, true);
           }
-          window.addEventListener('scroll', this.scrollHandler, false);
-          window.addEventListener('resize', this.scrollHandler, false);
-          return this.interval = setInterval(this.scrollCallback, 50);
+          window.addEventListener("scroll", this.scrollHandler, false);
+          window.addEventListener("resize", this.scrollHandler, false);
+          return (this.interval = setInterval(this.scrollCallback, 50));
         }
       }
     };
 
     WOW.prototype.stop = function () {
-      window.removeEventListener('scroll', this.scrollHandler, false);
-      window.removeEventListener('resize', this.scrollHandler, false);
+      window.removeEventListener("scroll", this.scrollHandler, false);
+      window.removeEventListener("resize", this.scrollHandler, false);
       if (this.interval != null) {
         return clearInterval(this.interval);
       }
@@ -143,15 +167,19 @@
 
     WOW.prototype.show = function (box) {
       this.applyStyle(box);
-      return box.className = "" + box.className + " " + this.config.animateClass;
+      return (box.className =
+        "" + box.className + " " + this.config.animateClass);
     };
 
     WOW.prototype.applyStyle = function (box, hidden) {
       var delay, duration, iteration;
-      duration = box.getAttribute('data-wow-duration');
-      delay = box.getAttribute('data-wow-delay');
-      iteration = box.getAttribute('data-wow-iteration');
-      return box.setAttribute('style', this.customStyle(hidden, duration, delay, iteration));
+      duration = box.getAttribute("data-wow-duration");
+      delay = box.getAttribute("data-wow-delay");
+      iteration = box.getAttribute("data-wow-iteration");
+      return box.setAttribute(
+        "style",
+        this.customStyle(hidden, duration, delay, iteration)
+      );
     };
 
     WOW.prototype.resetStyle = function () {
@@ -160,28 +188,51 @@
       _results = [];
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         box = _ref[_i];
-        _results.push(box.setAttribute('style', 'visibility: visible;'));
+        _results.push(box.setAttribute("style", "visibility: visible;"));
       }
       return _results;
     };
 
     WOW.prototype.customStyle = function (hidden, duration, delay, iteration) {
       var style;
-      style = hidden ? "visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;" : "visibility: visible;";
+      style = hidden
+        ? "visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;"
+        : "visibility: visible;";
       if (duration) {
-        style += "-webkit-animation-duration: " + duration + "; -moz-animation-duration: " + duration + "; animation-duration: " + duration + ";";
+        style +=
+          "-webkit-animation-duration: " +
+          duration +
+          "; -moz-animation-duration: " +
+          duration +
+          "; animation-duration: " +
+          duration +
+          ";";
       }
       if (delay) {
-        style += "-webkit-animation-delay: " + delay + "; -moz-animation-delay: " + delay + "; animation-delay: " + delay + ";";
+        style +=
+          "-webkit-animation-delay: " +
+          delay +
+          "; -moz-animation-delay: " +
+          delay +
+          "; animation-delay: " +
+          delay +
+          ";";
       }
       if (iteration) {
-        style += "-webkit-animation-iteration-count: " + iteration + "; -moz-animation-iteration-count: " + iteration + "; animation-iteration-count: " + iteration + ";";
+        style +=
+          "-webkit-animation-iteration-count: " +
+          iteration +
+          "; -moz-animation-iteration-count: " +
+          iteration +
+          "; animation-iteration-count: " +
+          iteration +
+          ";";
       }
       return style;
     };
 
     WOW.prototype.scrollHandler = function () {
-      return this.scrolled = true;
+      return (this.scrolled = true);
     };
 
     WOW.prototype.scrollCallback = function () {
@@ -209,12 +260,12 @@
           return this.stop();
         }
       }
-    };
+     };
 
     WOW.prototype.offsetTop = function (element) {
       var top;
       top = element.offsetTop;
-      while (element = element.offsetParent) {
+      while ((element = element.offsetParent)) {
         top += element.offsetTop;
       }
       return top;
@@ -222,7 +273,7 @@
 
     WOW.prototype.isVisible = function (box) {
       var bottom, offset, top, viewBottom, viewTop;
-      offset = box.getAttribute('data-wow-offset') || this.config.offset;
+      offset = box.getAttribute("data-wow-offset") || this.config.offset;
       viewTop = window.pageYOffset;
       viewBottom = viewTop + this.element.clientHeight - offset;
       top = this.offsetTop(box);
@@ -239,47 +290,36 @@
     };
 
     return WOW;
+  })();
+}.call(this));
 
-  }();
-
-}).call(this);
-
-
-wow = new WOW(
-{
-  animateClass: 'animated',
-  offset: 100 });
-
+wow = new WOW({
+  animateClass: "animated",
+  offset: 100,
+});
 
 wow.init();
 
-
-
-<!--      -->
-
-$(window).scroll(function(){
-    if ($(window).scrollTop() >= 300) {
-        $('header').addClass('fixed-header'); 
-    }
-    else {
-        $('header').removeClass('fixed-header'); 
-    }
+$(window).scroll(function () {
+  if ($(window).scrollTop() >= 300) {
+    $("header").addClass("fixed-header");
+  } else {
+    $("header").removeClass("fixed-header");
+  }
 });
 
- $(".see-more a").click(function(){
+$(".see-more a").click(function () {
   $(".more_live_projects").show();
   $(".see-more").hide();
 });
 
-$(".close_call_btn_caller").click(function(){
-  $(".modal_caller").removeClass('active');
+$(".close_call_btn_caller").click(function () {
+  $(".modal_caller").removeClass("active");
 });
-$(".btn_caller").click(function(){
-  $(".modal_caller").addClass('active');
+$(".btn_caller").click(function () {
+  $(".modal_caller").addClass("active");
 });
 
-<!--   -->
-
-$('body').on('hidden.bs.modal', '.modal', function () {
-$('video').trigger('pause');
+$("body").on("hidden.bs.modal", ".modal", function () {
+  $("video").trigger("pause");
 });
