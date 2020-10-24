@@ -1,11 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap);
 
+
 body {
     background: #fff;
     color: #fff;
     line-height: 22px;
     font-size: 14px;
     font-family: Poppins, sans-serif
+}
+
+.card-header a {
+    font-size: 16 !important;
+}
+
+.card-body p {
+    font-size: 16px ;
+}
+
+.test {
+    padding: 0;
+    margin: 0;
 }
 
 h1,
@@ -57,8 +71,9 @@ img {
 }
 
 
+
 .header {
-    padding: 20px 0;
+    padding: 10px 0;
     position: absolute;
     left: 0;
     right: 0;
@@ -68,20 +83,21 @@ img {
 
 .header ul {
     margin: 0;
-    padding: 20px 0 0 0;
+    padding: 0px 0 0 0;
 }
 
 .header ul li {
     display: inline-block;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 15px;
     position: relative;
 }
 
 .header ul li a {
+    font-size: 14px !important;
     display: inline-block;
     color: #555;
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-weight: 300;
+    /* letter-spacing: 1px; */
 }
 
 .header ul li a:hover {
@@ -792,12 +808,12 @@ a.btn_caller {
     transition: all 0.2s;
 }
 
-.the-arrow.-left > .shaft {
+.the-arrow.-left>.shaft {
     width: 0;
     background-color: #999;
 }
 
-.the-arrow > .shaft {
+.the-arrow>.shaft {
     background-color: #999;
     display: block;
     height: 1px;
@@ -808,8 +824,8 @@ a.btn_caller {
     left: 0;
 }
 
-.the-arrow > .shaft:before,
-.the-arrow > .shaft:after {
+.the-arrow>.shaft:before,
+.the-arrow>.shaft:after {
     background-color: #999;
     content: '';
     display: block;
@@ -821,59 +837,59 @@ a.btn_caller {
     transition-delay: 0;
 }
 
-.the-arrow.-left > .shaft:before {
+.the-arrow.-left>.shaft:before {
     -webkit-transform: rotate(0);
     transform: rotate(0);
 }
 
-.the-arrow.-left > .shaft:before,
-.the-arrow.-left > .shaft:after {
+.the-arrow.-left>.shaft:before,
+.the-arrow.-left>.shaft:after {
     width: 0;
     background-color: #999;
 }
 
-.the-arrow > .shaft:before {
+.the-arrow>.shaft:before {
     -webkit-transform-origin: top right;
     transform-origin: top right;
     right: -1px;
     top: 1px;
 }
 
-.the-arrow.-left > .shaft:after {
+.the-arrow.-left>.shaft:after {
     -webkit-transform: rotate(0);
     transform: rotate(0);
 }
 
-.animated-arrow > .main {
+.animated-arrow>.main {
     display: flex;
     align-items: center;
     transition: all 0.2s;
 }
 
 
-.animated-arrow:hover > .the-arrow.-left > .shaft:before,
-.animated-arrow:hover > .the-arrow.-left > .shaft:after {
+.animated-arrow:hover>.the-arrow.-left>.shaft:before,
+.animated-arrow:hover>.the-arrow.-left>.shaft:after {
     width: 10px;
     transition-delay: 0.1s;
     background-color: #eaeaea;
 }
 
-.animated-arrow:hover > .the-arrow.-left > .shaft:before {
+.animated-arrow:hover>.the-arrow.-left>.shaft:before {
     -webkit-transform: rotate(40deg);
     transform: rotate(40deg);
 }
 
-.animated-arrow:hover > .the-arrow.-left > .shaft:after {
+.animated-arrow:hover>.the-arrow.-left>.shaft:after {
     -webkit-transform: rotate(-40deg);
     transform: rotate(-40deg);
 }
 
-.animated-arrow:hover > .main {
+.animated-arrow:hover>.main {
     -webkit-transform: translateX(20px);
     transform: translateX(20px);
 }
 
-.animated-arrow:hover > .the-arrow.-left > .shaft {
+.animated-arrow:hover>.the-arrow.-left>.shaft {
     width: 20px;
     transition-delay: 0.1s;
     background-color: #eaeaea;
@@ -1162,7 +1178,7 @@ a.btn_caller {
 
 .ourteam {
     background: #fff;
-    padding: 100px 0;
+    padding: 70px 0;
     text-align: center;
 }
 
@@ -1203,7 +1219,7 @@ a.btn_caller {
 }
 
 .whatlearn {
-    padding: 130px 70px 50px;
+    padding: 0px 70px 50px;
 }
 
 .whatlearn h4 {
@@ -1271,7 +1287,24 @@ a.btn_caller {
     transform: rotate(-135deg);
 }
 
-#clients .carousel-control.left,
+#clients .carousel-control.left {
+    width: 10px;
+    height: 10px;
+    border-width: 2px 2px 0px 0;
+    border-style: solid;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    /* position: absolute; */
+    bottom: -43px;
+    color: #0b82f1;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: none;
+    opacity: 1;
+    top: auto;
+}
+
 #clients .carousel-control.right {
     width: 10px;
     height: 10px;
@@ -1282,7 +1315,7 @@ a.btn_caller {
     vertical-align: middle;
     position: absolute;
     bottom: -43px;
-    color: #389df9;
+    color: #0b82f1;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background: none;
@@ -1298,7 +1331,7 @@ a.btn_caller {
     bottom: -30px;
     position: absolute;
     left: auto;
-    right: 50px;
+    right: 32%;
     margin: 0;
     background: #ebebeb;
     border-radius: 30px;
@@ -1341,7 +1374,7 @@ a.btn_caller {
 }
 
 #clients .carousel-control.left {
-    left: 60%;
+    left: 0%;
     right: auto;
     bottom: -43px;
     top: auto;
@@ -1377,7 +1410,7 @@ a.btn_caller {
 }
 
 .faq {
-    padding: 100px 100px 100px;
+    padding: 50px 50px 50px;
 }
 
 .faq .card-header {
@@ -1421,7 +1454,7 @@ a.btn_caller {
 }
 
 .faq #accordion2 {
-    width: 730px;
+    width: 100%;
 }
 
 .ftrtop {
@@ -1441,7 +1474,7 @@ a.btn_caller {
 
 .ftrtop p {
     color: #FFFFFF9C;
-/*    margin: 0 0 30px 0px;*/
+    /*    margin: 0 0 30px 0px;*/
 }
 
 .joinow {
@@ -1902,7 +1935,7 @@ a.btn_caller {
 }
 
 .offerletter {
-    padding: 20px 0;
+    padding: 20px 35px;
 }
 
 .accomdation {
@@ -2192,7 +2225,7 @@ a.btn_caller {
 
 .costemi p {
     color: #021B56;
-    opacity: 0.32;
+    opacity: 0.5;
 }
 
 .getembt {
@@ -2366,8 +2399,87 @@ a.btn_caller {
 }
 
 @media (max-width:1023px) {
+    .loc_card {
+        padding: 0 !important;
+        width: 200px !important;
+    }
+
+    .loc_card_p {
+        font-size: 11px !important;
+    }
+
+    footer ul li {
+        padding: 0px 16px;
+    }
+
+    .faq {
+        padding: 24px 3px 15px;
+    }
+
+    .card {
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+    }
+
+    .faq #accordion2 {
+        width: 100%;
+    }
+
+    .learnslidecnt {
+        padding: 0px 0px;
+        text-align: center;
+    }
+
+    .learnslidecnt center {
+
+        padding: 10px 0 0 0px;
+        font-size: 13px;
+        width: 100%;
+        margin: 30px 0 0;
+
+    }
+
+    .covidreay {
+
+        padding: 9px 0;
+        margin: 80px 0 0;
+    }
+
+    .offerletter {
+        padding: 20px 0px;
+    }
+
+    .partner-logos {
+        margin-left: 70px;
+    }
+
+    .howitrow {
+        padding: 21px 5px;
+        background: #fff;
+        border-radius: 10px;
+        width: 218px;
+        box-shadow: 0 0 15px rgba(192, 200, 204, 0.25);
+        text-align: center;
+        min-height: 370px;
+        position: relative;
+    }
+
+    .banner:after {
+        width: 60%;
+        content: "";
+        position: absolute;
+        top: 0%;
+        right: 0px;
+        bottom: 40% !important;
+        background-image: url(../Jobpage/get-job-ready-banner.svg);
+        background-repeat: no-repeat;
+        background-position: 80px 54%;
+        background-size: contain;
+    }
+
     .navbar-collapse {
-        background: #ddd;
+        background: #fff;
         margin: 0 -15px;
         z-index: 9;
     }
@@ -2464,6 +2576,7 @@ a.btn_caller {
 
     .pad_t60 {
         padding: 0;
+        padding-top: 20px;
     }
 
     .icons {
@@ -2545,7 +2658,7 @@ a.btn_caller {
 }
 
 .channellogos {
-    padding: 0 0 80px;
+    padding: 0 0 30px;
 }
 
 .card-deck {
@@ -2599,13 +2712,15 @@ a.btn_caller {
 
 .locations h5 {
     font-weight: 600;
-    margin: 0 0 20px;
+    margin: 0 0 5px;
     font-size: 18px;
 }
 
 .locations .card-body {
-    min-height: 180px;
-    padding: 20px;
+    min-height: 170px;
+    padding: 2px;
+    overflow-y: auto;
+    max-height: 170px;
 }
 
 .howsteps {
@@ -2699,6 +2814,11 @@ a.btn_caller {
 
 
 @media (max-width:767px) {
+
+    .Globeslogo img {
+        width: 60% !important;
+    }
+
     .socuntnumber {
         top: -10px;
     }
@@ -2931,7 +3051,11 @@ a.btn_caller {
     }
 
     .offerletter {
-        padding: 0 0 20px;
+
+        padding-left: 69px;
+        padding-top: 0;
+
+
     }
 
     .emi {
@@ -3141,7 +3265,7 @@ a.btn_caller {
 
 .locations {
     background: #fff;
-    padding: 40px 0 70px;
+    padding: 00px 0 22px;
 }
 
 .heading-7 {
@@ -3207,7 +3331,7 @@ a.btn_caller {
     position: absolute;
     top: 0%;
     right: 0px;
-    bottom: 0;
+    bottom: 10%;
     background-image: url(../Jobpage/get-job-ready-banner.svg);
     background-repeat: no-repeat;
     background-position: 80px 54%;
@@ -3221,8 +3345,8 @@ a.btn_caller {
 
 .covidreay {
     background: #F1FAFF;
-    padding: 100px 0;
-    margin: 80px 0 0;
+    padding: 50px 0;
+    margin: 20px 0 0;
 }
 
 .covidreay h3 {
@@ -3308,6 +3432,10 @@ a.btn_caller {
 
 
 @media (max-width:767px) {
+    .partner-logos {
+        margin-left: -9px;
+    }
+
     .banner:after {
         display: none;
     }

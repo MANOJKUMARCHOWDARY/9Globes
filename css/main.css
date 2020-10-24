@@ -527,7 +527,7 @@ img {
 }
 .related-card-cnt h4 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
 }
 .pad_l_r20 {
@@ -535,7 +535,7 @@ img {
   padding-right: 20px;
 }
 .related-card-cnt p {
-  font-size: 14px;
+  font-size: 11px;
   color: #616060;
   margin-bottom: 25px;
   line-height: 1.5rem;
@@ -2232,24 +2232,25 @@ header.fixed-header {
   white-space: inherit;
 }
 .allCoursesBanner {
+  margin-top: 70px !important;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 80%;
   padding: 10% 0;
   margin-top: 95px;
 }
 .allCoursesBanner h1 {
   color: #fff;
   text-transform: capitalize;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 600;
   letter-spacing: 1px;
 }
 .allCoursesBanner h5 {
   color: #fff;
   letter-spacing: 1.5px;
-  font-size: 1.25rem;
-  font-weight: 600;
+     font-size: .9rem;
+    font-weight: 600;
 }
 .heading-12 {
   font-size: 16px;
@@ -2260,11 +2261,13 @@ header.fixed-header {
   font-weight: 600;
 }
 .cources_page .related-card-cnt {
-  padding: 35px 25px;
+  /* padding: 35px 25px; */
+  padding: 5px 5px;
 }
 .cources_page.related_col .pro-card p {
-  margin: 0 0 20px;
+  margin: 0 0 0px;
   min-height: 100px;
+  text-align: center;
 }
 .cources_page .pro-card {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
@@ -2779,6 +2782,7 @@ header.fixed-header {
   color: #fff;
 }
 @media (max-width: 767px) {
+ 
   .slideone,
   .slidethree,
   .slidetwo {
@@ -2786,8 +2790,12 @@ header.fixed-header {
     background-repeat: repeat-x;
   }
   .allCoursesBanner {
-    background-position: 0;
+    background-position: -196px;
   }
+  .Globeslogo img{
+    width: 60%;
+  }
+ 
   .slider_text {
     position: static;
     padding: 30px 20px 110px;
@@ -2821,6 +2829,7 @@ header.fixed-header {
     width: 280px;
     padding: 20px;
   }
+ 
   .contactpage .pt-7,
   .contactpage .py-7 {
     padding-top: 10px;
@@ -2868,7 +2877,7 @@ header.fixed-header {
     margin: 0 0 20px;
   }
   .allCoursesBanner {
-    margin-top: 70px;
+    margin-top: 84px  !important;
   }
   .allCoursesBanner h1 {
     font-size: 25px;
@@ -3262,7 +3271,7 @@ header.fixed-header {
     padding-left: 0;
   }
   .related_col {
-    padding: 50px 0;
+    padding: 15px 0;
   }
   .related_col .pad_l_r50 {
     padding-left: 0;
@@ -3377,6 +3386,15 @@ header.fixed-header {
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
+  .related-card-cnt p {
+    font-size: 11px;
+    padding: 0 !important;
+  }
+  .related-card-cnt h4 {
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+}
   .case_right {
     text-align: left;
   }
@@ -4594,7 +4612,7 @@ body {
   font-size: 20px;
 }
 .cources_page .courceminh .pro-card .cource_count p {
-  min-height: 145px !important;
+  min-height: 140px !important;
 }
 .heading-1,
 .keycol h5 {
@@ -5134,23 +5152,22 @@ body {
   .header .navbar-nav li a {
     font-size: 11px;
   }
-}
-/* ------------------tablet view-----------------> */
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
-  .awscol .testmonial_mid {
-    margin: 0;
+  .related_col{
+    padding: 15px !important;
   }
-  .keycol p {
-    font-size: 14px;
-    margin: 0 0 0 0;
+  .card-body{
+    padding: 0;
   }
+  .foot_list li{
+   padding: 16px;
+    
+  }
+  .copyright div{
+    text-align: center;
+  }
+  
 }
-
-/* ------------------mobile view-----------------> */
 @media (min-width: 320px) and (max-width: 767px) {
-  .owl-item.active {
-    width: 310px !important;
-  }
   .title-4 {
     font-size: 25px;
   }
@@ -5622,7 +5639,7 @@ body {
   padding: 0;
   list-style-type: none;
   font-size: 14px;
-  /* color: #22; */
+  color: #22;
 }
 .curriculam-points li {
   display: block;
