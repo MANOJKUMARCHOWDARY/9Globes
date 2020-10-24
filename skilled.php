@@ -3,7 +3,7 @@
             $host = "localhost";
             $username = "root";
             $password = "";
-            $dbname = "ninegloab";
+            $dbname = "skilled";
             $subject = 'nineGlobal Skilled Person Details';
 
 
@@ -47,13 +47,13 @@
 // echo "<script>alert('hello')</script>";
 
 
-$conn = new mysqli('localhost','root','','ninegloab');
+$conn = new mysqli('localhost','root','','skilled');
 if($conn==null){
     echo "<script>alert('We are facing some issue with serve please try again')</script>";
 }
 else {
  
-    $insertData = "INSERT INTO skilled(full_name,email,phone_number) VALUES('$name','$email','$phoneNumber')";
+    $insertData = "INSERT INTO resister(full_name,email,phone_number) VALUES('$name','$email','$phoneNumber')";
             if($conn->query($insertData)=== TRUE){
 
 
