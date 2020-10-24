@@ -2235,7 +2235,8 @@ header.fixed-header {
   margin-top: 70px !important;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 80%;
+  /* background-position: 80%; */
+  background-position: right;
   padding: 10% 0;
   margin-top: 95px;
 }
@@ -2249,8 +2250,8 @@ header.fixed-header {
 .allCoursesBanner h5 {
   color: #fff;
   letter-spacing: 1.5px;
-     font-size: .9rem;
-    font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 .heading-12 {
   font-size: 16px;
@@ -2782,7 +2783,6 @@ header.fixed-header {
   color: #fff;
 }
 @media (max-width: 767px) {
- 
   .slideone,
   .slidethree,
   .slidetwo {
@@ -2792,10 +2792,10 @@ header.fixed-header {
   .allCoursesBanner {
     background-position: -196px;
   }
-  .Globeslogo img{
+  .Globeslogo img {
     width: 60%;
   }
- 
+
   .slider_text {
     position: static;
     padding: 30px 20px 110px;
@@ -2829,7 +2829,7 @@ header.fixed-header {
     width: 280px;
     padding: 20px;
   }
- 
+
   .contactpage .pt-7,
   .contactpage .py-7 {
     padding-top: 10px;
@@ -2877,7 +2877,9 @@ header.fixed-header {
     margin: 0 0 20px;
   }
   .allCoursesBanner {
-    margin-top: 84px  !important;
+    margin-top: 84px !important;
+    /* margin-top: 70px; */
+    padding: 20% 0;
   }
   .allCoursesBanner h1 {
     font-size: 25px;
@@ -3151,7 +3153,7 @@ header.fixed-header {
     right: 20px;
   }
   .slider-content {
-    padding: 100px 5px 0 !important;
+    padding: 140px 5px 0 !important;
   }
   .heading-1 {
     font-size: 21px;
@@ -3354,7 +3356,7 @@ header.fixed-header {
   .cources-img span {
     left: 10px;
     margin: 0;
-    right: 10px;
+    /* right: 10px; */
     min-width: auto;
   }
   .nopad {
@@ -3394,7 +3396,7 @@ header.fixed-header {
     font-size: 21px;
     font-weight: 400;
     text-align: center;
-}
+  }
   .case_right {
     text-align: left;
   }
@@ -4760,7 +4762,7 @@ body {
   background-position: center !important;
 }
 #accordion1 .show {
-  display: none !important;
+  /* display: none !important; */
 }
 #accordion1 .show.in {
   display: block !important;
@@ -5152,22 +5154,58 @@ body {
   .header .navbar-nav li a {
     font-size: 11px;
   }
-  .related_col{
+  .related_col {
     padding: 15px !important;
   }
-  .card-body{
+  .card-body {
     padding: 0;
   }
-  .foot_list li{
-   padding: 16px;
-    
+  .foot_list li {
+    padding: 16px;
   }
-  .copyright div{
+  .copyright div {
     text-align: center;
   }
-  
+
+  .cources_page.related_col .pro-card p {
+    margin: 0 0 20px;
+    min-height: 120px;
+    height: 120px;
+    overflow-y: scroll;
+  }
+  .cources_page .courceminh .pro-card .cource_count p {
+    margin: 0 0 20px;
+    min-height: 120px;
+    height: 120px;
+    overflow-y: scroll;
+  }
+  .cources_page.related_col .pro-card .blockchain_cource p {
+    min-height: 170px;
+  }
+  .cources_page.related_col .pro-card p {
+    margin: 0 0 20px;
+    min-height: 120px;
+    height: 120px;
+    overflow-y: scroll;
+  }
+  .cources_page .courceminh .pro-card .cource_count p {
+    margin: 0 0 20px;
+    min-height: 120px;
+    height: 120px;
+    overflow-y: scroll;
+  }
+  .cources_page.related_col .pro-card .blockchain_cource p {
+    min-height: 170px;
+  }
 }
 @media (min-width: 320px) and (max-width: 767px) {
+  .owl-stage-outer .owl-item.active.center .item {
+    filter: grayscale(0) !important;
+    margin-left: -90px;
+  }
+  .owl-item.active {
+    width: 310px !important;
+  }
   .title-4 {
     font-size: 25px;
   }
