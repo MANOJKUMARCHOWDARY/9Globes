@@ -496,9 +496,10 @@
             </div>
         </div>
     </div>
-    <div>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
-    </div>
+
+    <!-- SCroll  -->
+        <a href="#" id="scroll" style="display: none;"><span></span></a>
+   
     <a class="btn_caller fade-in one animated zoomIn" href="javascript:void(0)"> <img src="images/call_o_o.png" alt="9Golbes Technologies" title="9Golbes Technologies"></a>
     <div id="modalone" class="cources_video modal fade" role="dialog">
         <div class="modal-dialog">
@@ -524,11 +525,11 @@
                 <div class="modal-body">
                     <form role="form" method="post" id="contactform">
                         <label> Full Name <sup>*</sup></label>
-                        <input type="text" class="" id="name" name="username" required maxlength="50">
+                        <input type="text" class="" id="name" name="username" required maxlength="20">
                         <label> Phone Number <sup>*</sup> </label>
-                        <input type="number" class="" id="phone" name="phone" required maxlength="50">
+                        <input type="number" class="" id="phone" name="phone" pattern="^[6-9]\d{9}$" required maxlength="12">
                         <label> Email <sup>*</sup> </label>
-                        <input type="text" class="" id="email" name="email" required>
+                        <input type="text" class="" id="email" name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required>
                         <label for="message">Message</label>
                         <input type="text" class="" name="message" placeholder="Write something.." style="height:80px">
 
@@ -598,24 +599,21 @@
 </script>
 
 <script>
-    //Get the button:
-mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0;
-}
+    
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
 </script>
 
 </body>
