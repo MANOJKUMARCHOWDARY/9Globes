@@ -64,7 +64,7 @@ button:focus {
 }
 
 img {
-    max-width: 100%;
+    max-width: 100% !important;
     vertical-align: middle;
 }
 
@@ -614,7 +614,7 @@ img {
 .updown_arrow {
     position: absolute;
     top: 5px;
-    right: 40px;
+left: 120%;
     font-size: 40px;
 }
 
@@ -795,14 +795,14 @@ img {
 }
 
 #testmonial .carousel-indicators {
-    bottom: -130px;
+    bottom: -50px;
 }
 
 #testmonial .carousel-indicators li {
-    width: 12px;
-    height: 12px;
+    width: 20px;
+    height: 2px;
     background: #d1d1d1;
-    border-radius: 50%;
+    border-radius: 1000%;
     cursor: pointer;
 }
 
@@ -967,7 +967,7 @@ footer ul li a {
     background-color: #3f19e0;
     color: #b09efb;
     padding: 10px;
-    font-size: 12px;
+    font-size: 12px;text-align: center;
 }
 
 .copyright a {
@@ -3381,11 +3381,11 @@ header.fixed-header {
 }
 
 .cources_page.related_col .pro-card .cource_count p {
-    min-height: 140px;
+    min-height: 120px;
 }
 
 .cources_page.related_col .pro-card .powerbi p {
-    min-height: 220px;
+    min-height: 120px;
 }
 
 .more_popleft img {
@@ -3413,7 +3413,10 @@ header.fixed-header {
 }
 
 @media (max-width: 767px) {
-
+    
+ .Globeslogo img {
+        width: 60% !important;
+    }
     .slideone,
     .slidethree,
     .slidetwo {
@@ -3425,9 +3428,7 @@ header.fixed-header {
         background-position: -196px;
     }
 
-    .Globeslogo img {
-        width: 60%;
-    }
+   
 
     .slider_text {
         position: static;
@@ -4213,9 +4214,10 @@ header.fixed-header {
     }
 
     .related-card-cnt h4 {
-        font-size: 21px;
+        font-size: 22px;
         font-weight: 400;
         text-align: center;
+        
     }
 
     .case_right {
@@ -4247,12 +4249,15 @@ header.fixed-header {
     }
 
     .header .navbar-nav li {
-        padding: 0 4px;
+        padding: 0 5px;
     }
 
     .header .navbar-nav li a {
         letter-spacing: 0;
-        font-size: 14px;
+        font-size: 11px !important;
+    }
+    .header .navbar-nav li a {
+        font-weight: 000;
     }
 
     .header .collapse {
@@ -4260,10 +4265,10 @@ header.fixed-header {
     }
 
     .header .navbar-nav li.get_link a:after {
-        left: -5px;
-        right: -5px;
-        top: 20px;
-        bottom: 20px;
+        left: -0px;
+        right: -0px;
+        top: 15px;
+    bottom: 15px;
     }
 
     .header .navbar-nav li.get_link {
@@ -5570,7 +5575,7 @@ body.game-development-col .copyright a {
     bottom: -131px;
     position: absolute;
     left: auto;
-    right: 50px;
+    right: 38%;
     margin: 0;
     background: #ebebeb;
     border-radius: 30px;
@@ -5601,8 +5606,8 @@ body.game-development-col .copyright a {
 }
 
 .awscol #testmonial .carousel-control.left {
-    left: 56%;
-    right: auto;
+    left: 0%;
+    right: 0%;
     bottom: -143px;
     top: auto;
 }
@@ -6216,7 +6221,7 @@ body {
 
 /* CAREER PAGE */
 .sectionone {
-    padding: 150px 0;
+    padding: 70px 0;
 }
 
 .interviewimg {
@@ -6308,7 +6313,7 @@ body {
 }
 
 .sectionthree {
-    padding: 80px 0;
+    padding: 0px 0;
     background: #fafafa;
 }
 
@@ -6331,11 +6336,12 @@ body {
 }
 
 .sectionfour {
-    padding: 100px 0;
+    padding: 0px 0;
 }
 
 .hackathonsimg {
     max-height: 380px;
+    margin-top: 50%;
 }
 
 .sectionfour h4 {
@@ -6363,7 +6369,7 @@ body {
 
 .sectionfive {
     background: #fafafa;
-    padding: 100px 0;
+    padding:10px 0;
 }
 
 .sectionfive h4 {
@@ -6445,14 +6451,14 @@ body {
         margin: 0 0 20px;
         min-height: 120px;
         height: 120px;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 
     .cources_page .courceminh .pro-card .cource_count p {
         margin: 0 0 20px;
         min-height: 120px;
         height: 120px;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 
     .cources_page.related_col .pro-card .blockchain_cource p {
@@ -6462,7 +6468,7 @@ body {
     .cources_page.related_col .pro-card p {
         margin: 0 0 20px;
         min-height: 120px;
-        height: 130px;
+        height: 120px;
         overflow-y: scroll;
     }
 
@@ -6535,7 +6541,7 @@ body {
     }
 
     .sectionfive {
-        padding: 50px 0;
+        padding: 0px 0;
         text-align: center;
     }
 
@@ -6668,7 +6674,7 @@ body {
     }
 
     .awscol #testmonial .carousel-indicators {
-        left: 10px;
+        left: 30px;
         right: 0;
     }
 
@@ -7629,3 +7635,8 @@ body {
     filter: "alpha(opacity=100)";
     -ms-filter: "alpha(opacity=100)";
 }
+
+/*  */
+
+
+/*  */
