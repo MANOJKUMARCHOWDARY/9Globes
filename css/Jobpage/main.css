@@ -1,112 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap);
-
-
-body {
-    background: #fff;
-    color: #fff;
-    line-height: 22px;
-    font-size: 14px;
-    font-family: Poppins, sans-serif
-}
-
-.card-header a {
-    font-size: 16 !important;
-}
-
-.card-body p {
-    font-size: 16px ;
-}
-
-.test {
-    padding: 0;
-    margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: normal;
-    color: #343433;
-    font-family: Poppins, sans-serif
-}
-
-h1 {
-    font-size: 36px;
-}
-
-h2 {
-    font-size: 20px;
-}
-
-h4 {
-    font-size: 16px;
-}
-
-a {
-    outline: none;
-}
-
-a {
-    color: #231f20;
-    -webkit-transition: color 300ms, background-color 300ms;
-    -moz-transition: color 300ms, background-color 300ms;
-    -o-transition: color 300ms, background-color 300ms;
-    transition: color 300ms, background-color 300ms;
-    -webkit-transition: all .5s cubic-bezier(0.215, .61, .355, 1);
-    -moz-transition: all .5s cubic-bezier(0.215, .61, .355, 1);
-    -o-transition: all .5s cubic-bezier(0.215, .61, .355, 1);
-    transition: all .5s cubic-bezier(0.215, .61, .355, 1);
-}
-
-a:hover,
-a:focus {
-    color: #d43133;
-}
-
-img {
-    max-width: 100%;
-}
-
-
-
-.header {
-    padding: 10px 0;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 9;
-}
-
-.header ul {
-    margin: 0;
-    padding: 0px 0 0 0;
-}
-
-.header ul li {
-    display: inline-block;
-    margin: 0 0 0 15px;
-    position: relative;
-}
-
-.header ul li a {
-    font-size: 14px !important;
-    display: inline-block;
-    color: #555;
-    font-weight: 300;
-    /* letter-spacing: 1px; */
-}
-
-.header ul li a:hover {
-    color: #000;
-    text-decoration: none;
-}
 
 .banner {
-    padding: 200px 0 50px;
     position: relative;
 }
 
@@ -493,21 +386,6 @@ a:focus {
     padding: 60px 0 0;
     text-align: center;
     color: #fff;
-}
-
-header.fixed-header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    z-index: 9;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 0px 0;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.11);
-}
-
-header.fixed-header .logo {
-    width: 180px;
 }
 
 .navbar-toggle .icon-bar {
@@ -1314,13 +1192,13 @@ a.btn_caller {
     display: inline-block;
     vertical-align: middle;
     position: absolute;
-    bottom: -43px;
     color: #0b82f1;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background: none;
     opacity: 1;
     top: auto;
+    right: 0;
 }
 
 #clients .carousel-indicators {
@@ -1328,7 +1206,6 @@ a.btn_caller {
 }
 
 #clients .carousel-indicators {
-    bottom: -30px;
     position: absolute;
     left: auto;
     right: 32%;
@@ -2681,7 +2558,7 @@ a.btn_caller {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-
+    margin: 0;
     margin-bottom: 0;
 }
 
@@ -2717,10 +2594,10 @@ a.btn_caller {
 }
 
 .locations .card-body {
-    min-height: 170px;
-    padding: 2px;
-    overflow-y: auto;
-    max-height: 170px;
+    min-height: 200px;
+    padding: 10px;
+    overflow: auto;
+    max-height: 200px;
 }
 
 .howsteps {
@@ -3285,44 +3162,6 @@ a.btn_caller {
 
 .choose-row ul li a:hover {
     color: #000;
-}
-
-.cl-effect-12 .menu a::after,
-.cl-effect-12 .menu a::before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 70px;
-    height: 70px;
-    border: 2px solid hsl(212deg 72% 48% / 8%);
-    border-radius: 50%;
-    content: '';
-    opacity: 0;
-    -webkit-transition: -webkit-transform .3s, opacity .3s;
-    -moz-transition: -moz-transform .3s, opacity .3s;
-    transition: transform .3s, opacity .3s;
-    -webkit-transform: translateX(-50%) translateY(-50%) scale(.2);
-    -moz-transform: translateX(-50%) translateY(-50%) scale(.2);
-    transform: translateX(-50%) translateY(-50%) scale(.2);
-}
-
-.cl-effect-12 .menu a::after {
-    width: 60px;
-    height: 60px;
-    border-width: 6px;
-    -webkit-transform: translateX(-50%) translateY(-50%) scale(.8);
-    -moz-transform: translateX(-50%) translateY(-50%) scale(.8);
-    transform: translateX(-50%) translateY(-50%) scale(.8)
-}
-
-.cl-effect-12 .menu a:focus::after,
-.cl-effect-12 .menu a:focus::before,
-.cl-effect-12 .menu a:hover::after,
-.cl-effect-12 .menu a:hover::before {
-    opacity: 1;
-    -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
-    -moz-transform: translateX(-50%) translateY(-50%) scale(1);
-    transform: translateX(-50%) translateY(-50%) scale(1)
 }
 
 .banner:after {
