@@ -45,7 +45,7 @@ $(function () {
       url: "skilled.php",
       data: $form.serialize(),
       success: after_form_submitted,
-      // dataType: 'json',
+     // dataType: 'json',
     });
   });
 });

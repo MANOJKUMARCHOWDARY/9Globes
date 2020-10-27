@@ -1270,7 +1270,8 @@ header.fixed-header {
 }
 
 #main_slider .item {
-  height: 87vh;
+    height: 100vh;
+
 }
 
 .slideone {
@@ -4138,12 +4139,13 @@ header.fixed-header {
     font-size: 2em !important;
   }
 
-  .cources-img span {
-    left: 10px;
-    margin: 0;
-    right: px;
-    min-width: auto;
-  }
+
+    .cources-img span {
+        left: 10px;
+        margin: 0;
+        right: 10px; 
+        min-width: auto;
+    }
 
   .nopad {
     padding: 0 !important;
