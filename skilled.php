@@ -7,7 +7,7 @@
             $subject = 'nineGlobal Skilled Person Details';
 
 
-            $name = $_POST['name'];
+            $name = $_POST['username'];
             $phoneNumber = $_POST['phone'];
             $email = $_POST['email'];
             $userMessage = $_POST['message'];
@@ -33,7 +33,7 @@
 			$mail->isHTML(true);                                  // Set email format to HTML
 
 			$mail->Subject = $subject;
-			$mail->Body    = "<div> <h3> Name :  $name \r\n </h3> <h3> Phone : $phone \r\n </h3>  <h3> Email id: $email \r\n </h3 <h3> User Message : $userMessage \r\n </h3></div>";
+			$mail->Body    = "<div> <h3> Name :  $name \r\n </h3> <h3> Phone : $phoneNumber \r\n </h3>  <h3> Email id: $email \r\n </h3 <h3> User Message : $userMessage \r\n </h3></div>";
 			// $mail->AltBody = $_POST['message'];
 
 			if(!$mail->send()) {

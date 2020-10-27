@@ -2787,7 +2787,7 @@ header.fixed-header {
 .allCoursesBanner h5 {
   color: #fff;
   letter-spacing: 1.5px;
-  font-size: 0.9rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
@@ -4212,7 +4212,7 @@ header.fixed-header {
     border-right: none;
   }
   .related-card-cnt p {
-    font-size: 11px;
+    font-size: 14px;
     padding: 0 !important;
   }
 
@@ -4229,7 +4229,6 @@ header.fixed-header {
     width: 24px;
     height: 44px;
     position: absolute;
-    left: -34px;
     top: 50%;
     margin-top: -22px;
   }
@@ -4239,16 +4238,15 @@ header.fixed-header {
     width: 24px;
     height: 44px;
     position: absolute;
-    right: -40px;
     top: 50%;
     margin-top: -22px;
   }
 
   .related-card-cnt h4 {
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 600;
     text-align: center;
-    min-height: 50px;
+   
   }
 
   .case_right {
@@ -4270,11 +4268,6 @@ header.fixed-header {
   .cources-img img {
     min-height: 180px;
   }
-
-  .cource-card-cnt h4 {
-    font-size: 15px;
-  }
-
   .cources-img button {
     left: 27%;
   }
@@ -4286,7 +4279,7 @@ header.fixed-header {
   /* .header .navbar-nav li a {
     letter-spacing: 0;
     /* font-size: 11px !important; */
-  } */
+  */
 
   .header .navbar-nav li a {
     font-weight: 000;
@@ -4327,9 +4320,9 @@ header.fixed-header {
     padding: 1.5rem 10px;
   }
 
-  .train-mid strong {
+ /* .train-mid strong {
     font-size: 18px;
-  }
+  } */
 
   .train-mid {
     padding: 0 10px 0 10px;
@@ -4403,13 +4396,13 @@ header.fixed-header {
     top: 20px;
   }
 
-  .related_col .owl-next {
+  /*.related_col .owl-next {
     right: -30px;
-  }
+  }*/
 
-  .related_col .owl-prev {
+ /* .related_col .owl-prev {
     left: -25px;
-  }
+  } */
 
   .video_internal {
     width: 100%;
@@ -6040,7 +6033,7 @@ body {
   display: inline-block;
   background: #ffca1a;
   line-height: 40px;
-  padding: 0 30px;
+  padding: 0 20px;
   border-radius: 30px;
   color: #515151;
   text-align: center;
