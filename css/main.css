@@ -4,6 +4,17 @@
 @import url(font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap);
 
+
+.p_c_8{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.p_c_0{
+  padding: 0;
+}
+.live_proj_hide{
+  display: none !important;
+}
 body {
   background: #fff;
   color: #212529;
@@ -11,6 +22,9 @@ body {
   font-size: 16px;
   font-family: Poppins, sans-serif;
   /* margin-top: 112px; */
+}
+.banner{
+  margin-top: 10%;
 }
 
 h1,
@@ -4198,6 +4212,26 @@ header.fixed-header {
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
+  .live_proj_hide{
+    display: block !important;
+    padding-bottom: 30px;
+  }
+.col-sm-3
+{
+  flex: 25% !important;
+  max-width: 25% !important;
+}
+.col-sm-9
+{
+  flex: 75% !important;
+  max-width: 75% !important;
+}
+
+  .col-sm-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+text-align: center;
+  }
     .cources-img span{
         left: 0%;
         margin-left: 0px;
@@ -6256,6 +6290,7 @@ body {
 
 .interviewimg {
   max-height: 420px;
+  padding-top: 50px;
 }
 
 .widthall {
@@ -6290,7 +6325,7 @@ body {
   font-size: 36px;
   font-weight: 600;
   color: #1c80c2;
-  margin: 0 0 10px;
+  margin: 40px 0 10px;
 }
 
 .title-5 {
@@ -6371,7 +6406,7 @@ body {
 
 .hackathonsimg {
   max-height: 380px;
-  margin-top: 50%;
+  margin-top: 10%;
 }
 
 .sectionfour h4 {
