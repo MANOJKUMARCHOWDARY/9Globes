@@ -2355,11 +2355,6 @@ a.btn_caller {
         background-size: contain;
     }
 
-    .navbar-collapse {
-        background: #fff;
-        margin: 0 -15px;
-        z-index: 9;
-    }
 
     .header ul li {
         display: block;
