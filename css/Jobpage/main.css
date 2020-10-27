@@ -2349,7 +2349,7 @@ a.btn_caller {
         top: 0%;
         right: 0px;
         bottom: 40% !important;
-        background-image: url(../Jobpage/get-job-ready-banner.svg);
+        background-image: none !important;
         background-repeat: no-repeat;
         background-position: 80px 54%;
         background-size: contain;
@@ -3401,4 +3401,10 @@ a.btn_caller {
     -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
     -moz-transform: translateX(-50%) translateY(-50%) scale(1);
     transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .choose-row ul li{
+            width: 60%;
+    }
 }
