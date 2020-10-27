@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head itemscope itemtype="https://schema.org/WebSite">
+  <head itemscope itemtype="https://schema.org/WebSite">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="" />
@@ -17,54 +16,87 @@
     <link rel="icon" href="images/9globes.jpg" sizes="32x32" />
     <!--    CSS-->
     <link rel="stylesheet" href="css/main.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <h2 itemprop="name" class="wphedline">About 9Golbes Technologies</h2>
     <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12">
-                    <a href="index.html" class="Globeslogo"><img src="images/9globes.jpg" alt="9Golbes Technologies" title="9Golbes Technologies" /></a>
-                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-12">
+            <a href="index.html" class="Globeslogo"
+              ><img
+                src="images/9globes.jpg"
+                alt="9Golbes Technologies"
+                title="9Golbes Technologies"
+            /></a>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class=""></span> <span class=""></span>
                         <span class=""></span>
                     </button> -->
 
-                    
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class=""></span> <span class=""></span> <span class=""></span>
-                </button>
-             
-                </div>
-                <div class="col-lg-9 col-md-9 col-sm-12" itemscope itemtype="https://schema.org/SiteNavigationElement">
-                    <nav class="collapse navbar-collapse collapse text-right" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav cl-effect-12">
-                            <li class="menu">
-                                <a href="courses.html" itemprop="url"><span itemprop="name">Courses</span></a>
-                            </li>
-                            <li class="menu">
-                                <a href="programs.html" itemprop="url"><span itemprop="name">Programs</span></a>
-                            </li>
-                            <li class="menu">
-                                <a href="job-ready-program.html" itemprop="url"><span itemprop="name">Job Ready Program</span></a>
-                            </li>
-                            <li class="menu">
-                                <a href="career.html" itemprop="url"><span itemprop="name">Career Support</span></a>
-                            </li>
-                            <!--                            <li class="menu"><a href="login.html" itemprop="url" target="_blank"><span itemprop="name">Sign In</span></a></li>-->
-                            <li class="get_link">
-                                <a href="#" data-toggle="modal" data-target="#get_trained" itemprop="url">
-                                    <span itemprop="name">Get Skilled</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class=""></span> <span class=""></span>
+              <span class=""></span>
+            </button>
+          </div>
+          <div
+            class="col-lg-9 col-md-9 col-sm-12"
+            itemscope
+            itemtype="https://schema.org/SiteNavigationElement"
+          >
+            <nav
+              class="collapse navbar-collapse collapse text-right"
+              id="navbarSupportedContent"
+            >
+              <ul class="nav navbar-nav cl-effect-12">
+                <li class="menu">
+                  <a href="courses.html" itemprop="url"
+                    ><span itemprop="name">Courses</span></a
+                  >
+                </li>
+                <li class="menu">
+                  <a href="programs.html" itemprop="url"
+                    ><span itemprop="name">Programs</span></a
+                  >
+                </li>
+                <li class="menu">
+                  <a href="job-ready-program.html" itemprop="url"
+                    ><span itemprop="name">Job Ready Program</span></a
+                  >
+                </li>
+                <li class="menu">
+                  <a href="career.html" itemprop="url"
+                    ><span itemprop="name">Career Support</span></a
+                  >
+                </li>
+                <!--                            <li class="menu"><a href="login.html" itemprop="url" target="_blank"><span itemprop="name">Sign In</span></a></li>-->
+                <li class="get_link">
+                  <a
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#get_trained"
+                    itemprop="url"
+                    id="getskilled"
+                    onclick="getSkilled()"
+                  >
+                    <span itemprop="name">Get Skilled</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
+      </div>
     </header>
-
 
     <div
       class="datascience_col"
@@ -137,12 +169,15 @@
                     data-toggle="modal"
                     data-target="#get_trained"
                     class="fadeInUp animated"
+                    id="scheduledemo"
+                    onclick="scheduledemo()"
                     >SCHEDULE ONLINE DEMO </a
                   ><a
                     href="https://www.digital-lync.com/data-science-training-in-hyderabad.html#"
                     data-toggle="modal"
                     data-target="#get_trained"
                     class="fadeInUp animated"
+                    onclick="contactUs()"
                     >Contact Course Adviser</a
                   >
                 </div>
@@ -320,6 +355,7 @@
                       class="reqbtn"
                       data-toggle="modal"
                       data-target="#get_trained"
+                      onclick="getCourseFee()"
                       >Get Course Fees</a
                     >
                   </div>
@@ -350,6 +386,7 @@
                       class="reqbtn"
                       data-toggle="modal"
                       data-target="#get_trained"
+                      onclick="getCourseFee()"
                       >Get Course Fees</a
                     >
                   </div>
@@ -381,6 +418,7 @@
                       class="reqbtn"
                       data-toggle="modal"
                       data-target="#get_trained"
+                      onclick="getCourseFee()"
                       >Get Course Fees</a
                     >
                   </div>
@@ -412,6 +450,7 @@
                       class="reqbtn"
                       data-toggle="modal"
                       data-target="#get_trained"
+                      onclick="getCourseFee()"
                       >Get Course Fees</a
                     >
                   </div>
@@ -429,6 +468,7 @@
                 class="reqbtn"
                 data-toggle="modal"
                 data-target="#get_trained"
+                onclick="requestABatch()"
                 >Request A Batch</a
               >
             </div>
@@ -2618,9 +2658,10 @@
                     src="images/curriculum_dwnld_icon.png"
                     alt="Download"
                     class="hvr-icon"
+                    onclick="curriculum()"
                   />
                 </span>
-                <span class="download-text">
+                <span class="download-text" onclick="curriculum()">
                   <strong>Download</strong> <em>curriculum</em>
                 </span>
               </a>
@@ -3313,6 +3354,7 @@
                       class=""
                       data-toggle="modal"
                       data-target="#get_trained"
+                      onclick="getCertificate()"
                       >Get Certified</a
                     >
                   </div>
@@ -3811,6 +3853,8 @@
                                   href="coursepage.html"
                                   data-toggle="modal"
                                   data-target="#get_trained"
+                                  onclick="curriculum()"
+                                  class="curriculum"
                                 >
                                   <img
                                     src="images/pdf-download.png"
@@ -3825,6 +3869,8 @@
                                   href="coursepage.html#"
                                   data-toggle="modal"
                                   data-target="#get_trained"
+                                  class="enroll"
+                                  onclick="enrollNow()"
                                 >
                                   <img
                                     src="images/enroll_here.png"
@@ -3862,6 +3908,8 @@
                                   href="https://www.digital-lync.com/data-science-training-in-hyderabad.html#"
                                   data-toggle="modal"
                                   data-target="#get_trained"
+                                  onclick="curriculum()"
+                                  class="curriculum"
                                 >
                                   <img
                                     src="images/pdf-download.png"
@@ -3876,6 +3924,8 @@
                                   href="https://www.digital-lync.com/data-science-training-in-hyderabad.html#"
                                   data-toggle="modal"
                                   data-target="#get_trained"
+                                  class="enroll"
+                                  onclick="enrollNow()"
                                 >
                                   <img
                                     src="images/enroll_here.png"
@@ -3918,6 +3968,8 @@
                                   href="https://www.digital-lync.com/data-science-training-in-hyderabad.html#"
                                   data-toggle="modal"
                                   data-target="#get_trained"
+                                  onclick="curriculum()"
+                                  class="curriculum"
                                 >
                                   <img
                                     src="images/pdf-download.png"
@@ -3932,6 +3984,8 @@
                                   href="https://www.digital-lync.com/data-science-training-in-hyderabad.html#"
                                   data-toggle="modal"
                                   data-target="#get_trained"
+                                  class="enroll"
+                                  onclick="enrollNow()"
                                 >
                                   <img
                                     src="images/enroll_here.png"
@@ -3970,6 +4024,8 @@
                                   href="https://www.digital-lync.com/data-science-training-in-hyderabad.html#"
                                   data-toggle="modal"
                                   data-target="#get_trained"
+                                  onclick="curriculum()"
+                                  class="curriculum"
                                 >
                                   <img
                                     src="images/pdf-download.png"
@@ -3984,6 +4040,8 @@
                                   href="https://www.digital-lync.com/data-science-training-in-hyderabad.html#"
                                   data-toggle="modal"
                                   data-target="#get_trained"
+                                  class="enroll"
+                                  onclick="enrollNow()"
                                 >
                                   <img
                                     src="images/enroll_here.png"
@@ -4023,6 +4081,8 @@
                                   href="https://www.digital-lync.com/data-science-training-in-hyderabad.html#"
                                   data-toggle="modal"
                                   data-target="#get_trained"
+                                  onclick="curriculum()"
+                                  class="curriculum"
                                 >
                                   <img
                                     src="images/pdf-download.png"
@@ -4037,6 +4097,8 @@
                                   href="https://www.digital-lync.com/data-science-training-in-hyderabad.html#"
                                   data-toggle="modal"
                                   data-target="#get_trained"
+                                  class="enroll"
+                                  onclick="enrollNow()"
                                 >
                                   <img
                                     src="images/enroll_here.png"
@@ -4079,6 +4141,8 @@
                                   href="https://www.digital-lync.com/data-science-training-in-hyderabad.html#"
                                   data-toggle="modal"
                                   data-target="#get_trained"
+                                  onclick="curriculum()"
+                                  class="curriculum"
                                 >
                                   <img
                                     src="images/pdf-download.png"
@@ -4093,6 +4157,8 @@
                                   href="https://www.digital-lync.com/data-science-training-in-hyderabad.html#"
                                   data-toggle="modal"
                                   data-target="#get_trained"
+                                  class="enroll"
+                                  onclick="enrollNow()"
                                 >
                                   <img
                                     src="images/enroll_here.png"
@@ -4131,6 +4197,8 @@
                                   href="https://www.digital-lync.com/data-science-training-in-hyderabad.html#"
                                   data-toggle="modal"
                                   data-target="#get_trained"
+                                  onclick="curriculum()"
+                                  class="curriculum"
                                 >
                                   <img
                                     src="images/pdf-download.png"
@@ -4145,6 +4213,8 @@
                                   href="https://www.digital-lync.com/data-science-training-in-hyderabad.html#"
                                   data-toggle="modal"
                                   data-target="#get_trained"
+                                  class="enroll"
+                                  onclick="enrollNow()"
                                 >
                                   <img
                                     src="images/enroll_here.png"
@@ -4184,6 +4254,8 @@
                                   href="https://www.digital-lync.com/data-science-training-in-hyderabad.html#"
                                   data-toggle="modal"
                                   data-target="#get_trained"
+                                  onclick="curriculum()"
+                                  class="curriculum"
                                 >
                                   <img
                                     src="images/pdf-download.png"
@@ -4198,6 +4270,8 @@
                                   href="https://www.digital-lync.com/data-science-training-in-hyderabad.html#"
                                   data-toggle="modal"
                                   data-target="#get_trained"
+                                  class="enroll"
+                                  onclick="enrollNow()"
                                 >
                                   <img
                                     src="images/enroll_here.png"
@@ -4240,6 +4314,8 @@
                                   href="https://www.digital-lync.com/data-science-training-in-hyderabad.html#"
                                   data-toggle="modal"
                                   data-target="#get_trained"
+                                  onclick="curriculum()"
+                                  class="curriculum"
                                 >
                                   <img
                                     src="images/pdf-download.png"
@@ -4254,6 +4330,8 @@
                                   href="https://www.digital-lync.com/data-science-training-in-hyderabad.html#"
                                   data-toggle="modal"
                                   data-target="#get_trained"
+                                  class="enroll"
+                                  onclick="enrollNow()"
                                 >
                                   <img
                                     src="images/enroll_here.png"
@@ -5790,6 +5868,7 @@
           class="joinow"
           data-toggle="modal"
           data-target="#get_trained"
+          onclick="scheduledemo()"
           >Book A Free Online Demo</a
         >
       </div>
@@ -5857,12 +5936,13 @@
         >
       </div>
     </div>
-
+    <script src="js/modal.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main-home.js"></script>
     <script src="js/getin-form.js"></script>
+
     <script>
       (function (d, w, c) {
         w.ChatraID = "7risZvfLfkzFErnmi";

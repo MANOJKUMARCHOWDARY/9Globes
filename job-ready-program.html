@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head itemscope itemtype="https://schema.org/WebSite">
+  <head itemscope itemtype="https://schema.org/WebSite">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="" />
@@ -18,88 +17,139 @@
     <!--    CSS-->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/Jobpage/main.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <h2 itemprop="name" class="wphedline">About 9Golbes Technologies</h2>
     <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12">
-                    <a href="index.html" class="Globeslogo"><img src="images/9globes.jpg" alt="9Golbes Technologies" title="9Golbes Technologies" /></a>
-                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-12">
+            <a href="index.html" class="Globeslogo"
+              ><img
+                src="images/9globes.jpg"
+                alt="9Golbes Technologies"
+                title="9Golbes Technologies"
+            /></a>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class=""></span> <span class=""></span>
                         <span class=""></span>
                     </button> -->
 
-
-                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class=""></span> <span class=""></span> <span class=""></span>
-                    </button>
-
-                </div>
-                <div class="col-lg-9 col-md-9 col-sm-12" itemscope itemtype="https://schema.org/SiteNavigationElement">
-                    <nav class="collapse navbar-collapse collapse text-right" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav cl-effect-12">
-                            <li class="menu">
-                                <a href="courses.html" itemprop="url"><span itemprop="name">Courses</span></a>
-                            </li>
-                            <li class="menu">
-                                <a href="programs.html" itemprop="url"><span itemprop="name">Programs</span></a>
-                            </li>
-                            <li class="menu">
-                                <a href="job-ready-program.html" itemprop="url"><span itemprop="name">Job Ready Program</span></a>
-                            </li>
-                            <li class="menu">
-                                <a href="career.html" itemprop="url"><span itemprop="name">Career Support</span></a>
-                            </li>
-                            <!--                            <li class="menu"><a href="login.html" itemprop="url" target="_blank"><span itemprop="name">Sign In</span></a></li>-->
-                            <li class="get_link">
-                                <a href="#" data-toggle="modal" data-target="#get_trained" itemprop="url">
-                                    <span itemprop="name">Get Skilled</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class=""></span> <span class=""></span>
+              <span class=""></span>
+            </button>
+          </div>
+          <div
+            class="col-lg-9 col-md-9 col-sm-12"
+            itemscope
+            itemtype="https://schema.org/SiteNavigationElement"
+          >
+            <nav
+              class="collapse navbar-collapse collapse text-right"
+              id="navbarSupportedContent"
+            >
+              <ul class="nav navbar-nav cl-effect-12">
+                <li class="menu">
+                  <a href="courses.html" itemprop="url"
+                    ><span itemprop="name">Courses</span></a
+                  >
+                </li>
+                <li class="menu">
+                  <a href="programs.html" itemprop="url"
+                    ><span itemprop="name">Programs</span></a
+                  >
+                </li>
+                <li class="menu">
+                  <a href="job-ready-program.html" itemprop="url"
+                    ><span itemprop="name">Job Ready Program</span></a
+                  >
+                </li>
+                <li class="menu">
+                  <a href="career.html" itemprop="url"
+                    ><span itemprop="name">Career Support</span></a
+                  >
+                </li>
+                <!--                            <li class="menu"><a href="login.html" itemprop="url" target="_blank"><span itemprop="name">Sign In</span></a></li>-->
+                <li class="get_link">
+                  <a
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#get_trained"
+                    id="getskilled"
+                    onclick="getSkilled()"
+                    itemprop="url"
+                  >
+                    <span itemprop="name">Get Skilled</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
+      </div>
     </header>
 
-
-
     <div class="banner" itemscope itemtype="https://schema.org/WPHeader">
-        <div itemprop="headline" class="wphedline">Digital Lync</div>
-        <div class="container">
-            <div class="row">
-                <!-- <div class="col-md-6 mobileshow">
+      <div itemprop="headline" class="wphedline">Digital Lync</div>
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-md-6 mobileshow">
                                <img src="images/get-job-ready-banner.svg" alt="Get Your Offer Letter within 16 weeks" class="wow fadeInRight animated">
                 </div> -->
-                <div class="col-md-6 test">
-                    <h1 itemprop="description" class="wow fadeInLeft animated">Get Your <span>Offer Letter</span> within 24 weeks </h1>
-                    <p class="wow fadeInLeft animated">This Program Enables you to get the Skills required for building a better career in Technology Jobs . This Includes Various Technologies, Personality Development, Aptitude, Interview Skills that can shape your Future.
-                    </p>
-                    <div class="offerletter">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="emi">EMI Options</div>
-
-                            </div>
-                            <div class="col-md-4 acdbrdr">
-                                <div class="accomdation"><span>100% Placements </span> Assured</div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="placed"><span>2000+</span> Students Placed</div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="button_normal animated-arrow wow fadeInUp animated" data-toggle="modal" data-target="#get_trained"><span class="the-arrow -left"> <span class="shaft"></span> </span> <span class="main"> <span class="text">Want To Know How?</span></span></a>
-                    <!--<a href="#" class="button_normal wow fadeInUp animated" data-toggle="modal" data-target="#get_trained"> Connect with us</a>-->
+          <div class="col-md-6 test">
+            <h1 itemprop="description" class="wow fadeInLeft animated">
+              Get Your <span>Offer Letter</span> within 24 weeks
+            </h1>
+            <p class="wow fadeInLeft animated">
+              This Program Enables you to get the Skills required for building a
+              better career in Technology Jobs . This Includes Various
+              Technologies, Personality Development, Aptitude, Interview Skills
+              that can shape your Future.
+            </p>
+            <div class="offerletter">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="emi">EMI Options</div>
                 </div>
+                <div class="col-md-4 acdbrdr">
+                  <div class="accomdation">
+                    <span>100% Placements </span> Assured
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="placed"><span>2000+</span> Students Placed</div>
+                </div>
+              </div>
             </div>
+            <a
+              href="#"
+              class="button_normal animated-arrow wow fadeInUp animated"
+              data-toggle="modal"
+              data-target="#get_trained"
+              id="howNineGlobalWorks"
+              onclick="howNineGlobalWorks()"
+              ><span class="the-arrow -left">
+                <span class="shaft"></span>
+              </span>
+              <span class="main">
+                <span class="text">Want To Know How?</span></span
+              ></a
+            >
+            <!--<a href="#" class="button_normal wow fadeInUp animated" data-toggle="modal" data-target="#get_trained"> Connect with us</a>-->
+          </div>
+        </div>
 
-            <!--
+        <!--
             <h3 class="wow fadeInDown animated">Our Hiring Partners</h3>
             <div class="partner-logos wow fadeInUp animated">
                 <img src="images/zest-logo.png" alt="Partners">
@@ -111,641 +161,1321 @@
                 <img src="images/flip-logo.png" alt="Partners">
             </div>
 -->
-        </div>
+      </div>
     </div>
 
     <div class="happy_partners">
-        <div class="container">
-            <h3 class="heading-3 wow fadeInUp animated">Our Hiring Partners</h3>
-            <h5 class="heading-9 wow fadeInUp animated">
-                You'll be in good company
-            </h5>
-            <div class="partnerlogos">
-                <div class="loop center owl-carousel owl-theme">
-                    <div class="item">
-                        <img src="images/brocade-partner.png" alt="9Golbes Technologies" title="9Golbes Technologies" />
-                    </div>
-                    <div class="item">
-                        <img src="images/processweaver-partner.png" alt="9Golbes Technologies" title="9Golbes Technologies" />
-                    </div>
-                    <div class="item">
-                        <img src="images/foyr.png" alt="9Golbes Technologies" title="9Golbes Technologies" />
-                    </div>
-                    <div class="item">
-                        <img src="images/intellibot.png" alt="9Golbes Technologies" title="9Golbes Technologies" />
-                    </div>
-                    <div class="item">
-                        <img src="images/salesforce-partner.png" alt="9Golbes Technologies" title="9Golbes Technologies" />
-                    </div>
-                    <div class="item">
-                        <img src="images/ideeo.png" alt="9Golbes Technologies" title="9Golbes Technologies" />
-                    </div>
-                    <div class="item">
-                        <img src="images/att-partner.png" alt="9Golbes Technologies" title="9Golbes Technologies" />
-                    </div>
-                </div>
+      <div class="container">
+        <h3 class="heading-3 wow fadeInUp animated">Our Hiring Partners</h3>
+        <h5 class="heading-9 wow fadeInUp animated">
+          You'll be in good company
+        </h5>
+        <div class="partnerlogos">
+          <div class="loop center owl-carousel owl-theme">
+            <div class="item">
+              <img
+                src="images/brocade-partner.png"
+                alt="9Golbes Technologies"
+                title="9Golbes Technologies"
+              />
             </div>
+            <div class="item">
+              <img
+                src="images/processweaver-partner.png"
+                alt="9Golbes Technologies"
+                title="9Golbes Technologies"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="images/foyr.png"
+                alt="9Golbes Technologies"
+                title="9Golbes Technologies"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="images/intellibot.png"
+                alt="9Golbes Technologies"
+                title="9Golbes Technologies"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="images/salesforce-partner.png"
+                alt="9Golbes Technologies"
+                title="9Golbes Technologies"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="images/ideeo.png"
+                alt="9Golbes Technologies"
+                title="9Golbes Technologies"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="images/att-partner.png"
+                alt="9Golbes Technologies"
+                title="9Golbes Technologies"
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-
     <div class="howitworks" id="howitworks">
-        <div class="container">
-            <h3 class=" wow fadeInUp animated">How It Works</h3>
-            <h5 class=" wow fadeInUp animated">Our Program is Designed to give you 360 degree coverage of <br>Personalized Skills so that you will have a Successful Career Launch.</h5>
-            <div class="howsteps">
-                <div class="how_t">
-                    <div class="dottarrow1">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="howitrow  wow fadeInUp animated">
-                                    <span class="socuntnumber">1</span>
-                                    <img src="images/howit4.svg" alt="Book appointment">
-                                    <h6>3 Months</h6>
-                                    <h4>Get Trained </h4>
-                                    <p>Training Includes Fundamentals to Advanced Concepts so that you can Ace your Technical Interviews with utmost Confidence</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="howitrow marginauto  wow fadeInUp animated">
-                                    <span class="socuntnumber">2</span>
-                                    <img src="images/howit3.svg" alt="Get Counseling">
-                                    <h6>3 Months</h6>
-                                    <h4>Get an Internship</h4>
-                                    <p>We offer Internship with our Partner Companies to work in Real time projects so that we can apply the skill you learnt in training in the job.</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="howitrow flr  wow fadeInUp animated">
-                                    <span class="socuntnumber">3</span>
-                                    <img src="images/howit8.jpg" alt="Get Training">
-                                    <h4>Get a Job</h4>
-                                    <p>After Successfully Completing Training and Internship, Interviews will be scheduled with Various Companies to get you a Job.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <h3 class="wow fadeInUp animated">How It Works</h3>
+        <h5 class="wow fadeInUp animated">
+          Our Program is Designed to give you 360 degree coverage of
+          <br />Personalized Skills so that you will have a Successful Career
+          Launch.
+        </h5>
+        <div class="howsteps">
+          <div class="how_t">
+            <div class="dottarrow1">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="howitrow wow fadeInUp animated">
+                    <span class="socuntnumber">1</span>
+                    <img src="images/howit4.svg" alt="Book appointment" />
+                    <h6>3 Months</h6>
+                    <h4>Get Trained</h4>
+                    <p>
+                      Training Includes Fundamentals to Advanced Concepts so
+                      that you can Ace your Technical Interviews with utmost
+                      Confidence
+                    </p>
+                  </div>
                 </div>
+
+                <div class="col-md-4">
+                  <div class="howitrow marginauto wow fadeInUp animated">
+                    <span class="socuntnumber">2</span>
+                    <img src="images/howit3.svg" alt="Get Counseling" />
+                    <h6>3 Months</h6>
+                    <h4>Get an Internship</h4>
+                    <p>
+                      We offer Internship with our Partner Companies to work in
+                      Real time projects so that we can apply the skill you
+                      learnt in training in the job.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="howitrow flr wow fadeInUp animated">
+                    <span class="socuntnumber">3</span>
+                    <img src="images/howit8.jpg" alt="Get Training" />
+                    <h4>Get a Job</h4>
+                    <p>
+                      After Successfully Completing Training and Internship,
+                      Interviews will be scheduled with Various Companies to get
+                      you a Job.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="text-center btncol pad_t50"><a href="#" class="button_normal animated-arrow wow fadeInUp animated" data-toggle="modal" data-target="#get_trained"><span class="the-arrow -left"> <span class="shaft"></span> </span> <span class="main"> <span class="text">Get Job Ready</span></span></a></div>
+          </div>
         </div>
+        <div class="text-center btncol pad_t50">
+          <a
+            href="#"
+            class="button_normal animated-arrow wow fadeInUp animated"
+            data-toggle="modal"
+            data-target="#get_trained"
+            id="getJobReady"
+            onclick="getJobReady()"
+            ><span class="the-arrow -left"> <span class="shaft"></span> </span>
+            <span class="main">
+              <span class="text">Get Job Ready</span></span
+            ></a
+          >
+        </div>
+      </div>
     </div>
 
     <div class="success_dl">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 d-flex align-items-center">
-                    <div class="">
-                        <h5 class="wow fadeInUp animated">Get job-ready and get placed!</h5>
-                        <h4 class="wow fadeInUp animated">Providing a gateway for job placements</h4>
-                        <p class="wow fadeInUp animated">Master the industry-relevant technologies with our specially curated job-ready program and get job-offers from top-rated companies right on your hands!</p>
-                        <div class="btncol"><a href="#" class="button_normal animated-arrow wow fadeInUp animated" data-toggle="modal" data-target="#get_trained"><span class="the-arrow -left"> <span class="shaft"></span> </span> <span class="main"> <span class="text">Join Now</span></span></a></div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <img src="images/ourstudents.jpg" class="placementimg" alt="Job Ready Program Our Students Successfully Placed" cl wow fadeInUp animated>
-                    <div class="row placementimgrow wow fadeInUp animated">
-                        <div class="col-md-6"><img src="images/ourstudents2.jpg" alt="Job Ready Program Job Offers for our students" class=" "></div>
-                        <div class="col-md-6"><img src="images/ourstudents3.jpg" alt="Job Ready Program Job Offers for our students" class=""></div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="">
+              <h5 class="wow fadeInUp animated">
+                Get job-ready and get placed!
+              </h5>
+              <h4 class="wow fadeInUp animated">
+                Providing a gateway for job placements
+              </h4>
+              <p class="wow fadeInUp animated">
+                Master the industry-relevant technologies with our specially
+                curated job-ready program and get job-offers from top-rated
+                companies right on your hands!
+              </p>
+              <div class="btncol">
+                <a
+                  href="#"
+                  onclick="joinNow()"
+                  class="button_normal animated-arrow wow fadeInUp animated"
+                  data-toggle="modal"
+                  data-target="#get_trained"
+                  ><span class="the-arrow -left">
+                    <span class="shaft"></span>
+                  </span>
+                  <span class="main">
+                    <span class="text">Join Now</span></span
+                  ></a
+                >
+              </div>
             </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="images/ourstudents.jpg"
+              class="placementimg"
+              alt="Job Ready Program Our Students Successfully Placed"
+              cl
+              wow
+              fadeInUp
+              animated
+            />
+            <div class="row placementimgrow wow fadeInUp animated">
+              <div class="col-md-6">
+                <img
+                  src="images/ourstudents2.jpg"
+                  alt="Job Ready Program Job Offers for our students"
+                  class=" "
+                />
+              </div>
+              <div class="col-md-6">
+                <img
+                  src="images/ourstudents3.jpg"
+                  alt="Job Ready Program Job Offers for our students"
+                  class=""
+                />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-
     <div class="choose-jobready">
-        <div class="container">
-            <h5 class="wow fadeInUp animated">Choose your career options</h5>
-            <h3 class="wow fadeInUp animated">Our Job Ready Programs</h3>
-            <h4 class="wow fadeInUp animated titl_one">Coding Programs</h4>
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-5 pad_lr5">
-                    <div class="choose-row wow fadeInUp animated">
-                        <div class="choose-img">
-                            <a href="full-stack-training-job-ready-program-in-hyderabad.html"><img src="images/fullstackimg.jpg" alt="Full Stack Development" class=" ">
-                                <h6><span>Full Stack Development</span></h6>
-                            </a>
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="#" data-toggle="modal" data-target="#get_trained"><img src="images/darrow.png" alt="Full Stack Development" class=" "> Download <br>Curriculum</a>
-                            </li>
-                            <li>
-                                <a href="full-stack-training-job-ready-program-in-hyderabad.html"><img src="images/rarrow.png" alt="Full Stack Development" class=" "> View Program</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-5 pad_lr5">
-                    <div class="choose-row wow fadeInUp animated">
-                        <div class="choose-img">
-                            <a href="python-training-job-ready-program-in-hyderabad.html"><img src="images/pythonimg.jpg" alt="Cloud DevOps" class=" ">
-                                <h6><span>Python Programming</span></h6>
-                            </a>
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="#" data-toggle="modal" data-target="#get_trained"><img src="images/darrow.png" alt="Full Stack Development" class=" "> Download <br>Curriculum</a>
-                            </li>
-                            <li>
-                                <a href="python-training-job-ready-program-in-hyderabad.html"><img src="images/rarrow.png" alt="Full Stack Development" class=" "> View Program</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <h5 class="wow fadeInUp animated">Choose your career options</h5>
+        <h3 class="wow fadeInUp animated">Our Job Ready Programs</h3>
+        <h4 class="wow fadeInUp animated titl_one">Coding Programs</h4>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-5 pad_lr5">
+            <div class="choose-row wow fadeInUp animated">
+              <div class="choose-img">
+                <a
+                  href="full-stack-training-job-ready-program-in-hyderabad.html"
+                  ><img
+                    src="images/fullstackimg.jpg"
+                    alt="Full Stack Development"
+                    class=" "
+                  />
+                  <h6><span>Full Stack Development</span></h6>
+                </a>
+              </div>
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="modal"
+                    onclick="curriculum()"
+                    class="curriculum"
+                    data-target="#get_trained"
+                    ><img
+                      src="images/darrow.png"
+                      onclick="curriculum()"
+                      class="curriculum"
+                      alt="Full Stack Development"
+                      class=" "
+                    />
+                    Download <br />Curriculum</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="full-stack-training-job-ready-program-in-hyderabad.html"
+                    ><img
+                      src="images/rarrow.png"
+                      alt="Full Stack Development"
+                      class=" "
+                    />
+                    View Program</a
+                  >
+                </li>
+              </ul>
             </div>
-            <div class="pad_t60">
-                <h4 class="wow fadeInUp animated titl_one">Less Coding Programs</h4>
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-5 pad_lr5">
-                        <div class="choose-row wow fadeInUp animated">
-                            <div class="choose-img">
-                                <a href="aws-training-job-ready-program-in-hyderabad.html"><img src="images/aws.jpg" alt="Python" class=" ">
-                                    <h6><span>AWS</span></h6>
-                                </a>
-                            </div>
-                            <ul>
-                                <li>
-                                    <a href="#" data-toggle="modal" data-target="#get_trained"><img src="images/darrow.png" alt="Full Stack Development" class=" "> Download <br>Curriculum</a>
-                                </li>
-                                <li>
-                                    <a href="aws-training-job-ready-program-in-hyderabad.html"><img src="images/rarrow.png" alt="Full Stack Development" class=" "> View Program</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-5 pad_lr5">
-                        <div class="choose-row wow fadeInUp animated">
-                            <div class="choose-img">
-                                <a href="devops-training-job-ready-program-in-hyderabad.html"><img src="images/devops.jpg" alt="Python" class=" ">
-                                    <h6><span>DevOps</span></h6>
-                                </a>
-                            </div>
-                            <ul>
-                                <li>
-                                    <a href="#" data-toggle="modal" data-target="#get_trained"><img src="images/darrow.png" alt="Full Stack Development" class=" "> Download <br>Curriculum</a>
-                                </li>
-                                <li>
-                                    <a href="devops-training-job-ready-program-in-hyderabad.html"><img src="images/rarrow.png" alt="Full Stack Development" class=" "> View Program</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col-md-5 pad_lr5">
+            <div class="choose-row wow fadeInUp animated">
+              <div class="choose-img">
+                <a href="python-training-job-ready-program-in-hyderabad.html"
+                  ><img
+                    src="images/pythonimg.jpg"
+                    alt="Cloud DevOps"
+                    class=" "
+                  />
+                  <h6><span>Python Programming</span></h6>
+                </a>
+              </div>
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="modal"
+                    onclick="curriculum()"
+                    class="curriculum"
+                    data-target="#get_trained"
+                    ><img
+                      src="images/darrow.png"
+                      alt="Full Stack Development"
+                      class=" "
+                    />
+                    Download <br />Curriculum</a
+                  >
+                </li>
+                <li>
+                  <a href="python-training-job-ready-program-in-hyderabad.html"
+                    ><img
+                      src="images/rarrow.png"
+                      alt="Full Stack Development"
+                      class=" "
+                    />
+                    View Program</a
+                  >
+                </li>
+              </ul>
             </div>
-
-            <div class="pad_t60">
-                <h4 class="wow fadeInUp animated titl_one">No Coding Programs</h4>
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-5 pad_lr5">
-                        <div class="choose-row wow fadeInUp animated">
-                            <div class="choose-img">
-                                <a href="digital-marketing-training-job-ready-program-in-hyderabad.html"><img src="images/digital.jpg" alt="Digital Marketing" class=" ">
-                                    <h6><span>Digital Marketing</span></h6>
-                                </a>
-                            </div>
-                            <ul>
-                                <li>
-                                    <a href="#" data-toggle="modal" data-target="#get_trained"><img src="images/darrow.png" alt="Full Stack Development" class=" "> Download <br>Curriculum</a>
-                                </li>
-                                <li>
-                                    <a href="digital-marketing-training-job-ready-program-in-hyderabad.html"><img src="images/rarrow.png" alt="Full Stack Development" class=" "> View Program</a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-5 pad_lr5">
-                        <div class="choose-row wow fadeInUp animated">
-                            <div class="choose-img">
-                                <a href="ui-ux-desgining-job-ready-program-in-hyderabad.html"><img src="images/uiuximg.jpg" alt="UI/UX" class=" ">
-                                    <h6><span>UI/UX</span></h6>
-                                </a>
-                            </div>
-                            <ul>
-                                <li>
-                                    <a href="#" data-toggle="modal" data-target="#get_trained"><img src="images/darrow.png" alt="Full Stack Development" class=" "> Download <br>Curriculum</a>
-                                </li>
-                                <li>
-                                    <a href="ui-ux-desgining-job-ready-program-in-hyderabad.html"><img src="images/rarrow.png" alt="Full Stack Development" class=" "> View Program</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="pad_t60">
+          <h4 class="wow fadeInUp animated titl_one">Less Coding Programs</h4>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 pad_lr5">
+              <div class="choose-row wow fadeInUp animated">
+                <div class="choose-img">
+                  <a href="aws-training-job-ready-program-in-hyderabad.html"
+                    ><img src="images/aws.jpg" alt="Python" class=" " />
+                    <h6><span>AWS</span></h6>
+                  </a>
+                </div>
+                <ul>
+                  <li>
+                    <a
+                      href="#"
+                      data-toggle="modal"
+                      onclick="curriculum()"
+                      class="curriculum"
+                      data-target="#get_trained"
+                      ><img
+                        src="images/darrow.png"
+                        alt="Full Stack Development"
+                        class=" "
+                      />
+                      Download <br />Curriculum</a
+                    >
+                  </li>
+                  <li>
+                    <a href="aws-training-job-ready-program-in-hyderabad.html"
+                      ><img
+                        src="images/rarrow.png"
+                        alt="Full Stack Development"
+                        class=" "
+                      />
+                      View Program</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-5 pad_lr5">
+              <div class="choose-row wow fadeInUp animated">
+                <div class="choose-img">
+                  <a href="devops-training-job-ready-program-in-hyderabad.html"
+                    ><img src="images/devops.jpg" alt="Python" class=" " />
+                    <h6><span>DevOps</span></h6>
+                  </a>
+                </div>
+                <ul>
+                  <li>
+                    <a
+                      href="#"
+                      data-toggle="modal"
+                      onclick="curriculum()"
+                      class="curriculum"
+                      data-target="#get_trained"
+                      ><img
+                        src="images/darrow.png"
+                        alt="Full Stack Development"
+                        class=" "
+                      />
+                      Download <br />Curriculum</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="devops-training-job-ready-program-in-hyderabad.html"
+                      ><img
+                        src="images/rarrow.png"
+                        alt="Full Stack Development"
+                        class=" "
+                      />
+                      View Program</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pad_t60">
+          <h4 class="wow fadeInUp animated titl_one">No Coding Programs</h4>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 pad_lr5">
+              <div class="choose-row wow fadeInUp animated">
+                <div class="choose-img">
+                  <a
+                    href="digital-marketing-training-job-ready-program-in-hyderabad.html"
+                    ><img
+                      src="images/digital.jpg"
+                      alt="Digital Marketing"
+                      class=" "
+                    />
+                    <h6><span>Digital Marketing</span></h6>
+                  </a>
+                </div>
+                <ul>
+                  <li>
+                    <a
+                      href="#"
+                      data-toggle="modal"
+                      onclick="curriculum()"
+                      class="curriculum"
+                      data-target="#get_trained"
+                      ><img
+                        src="images/darrow.png"
+                        alt="Full Stack Development"
+                        class=" "
+                      />
+                      Download <br />Curriculum</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="digital-marketing-training-job-ready-program-in-hyderabad.html"
+                      ><img
+                        src="images/rarrow.png"
+                        alt="Full Stack Development"
+                        class=" "
+                      />
+                      View Program</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-5 pad_lr5">
+              <div class="choose-row wow fadeInUp animated">
+                <div class="choose-img">
+                  <a href="ui-ux-desgining-job-ready-program-in-hyderabad.html"
+                    ><img src="images/uiuximg.jpg" alt="UI/UX" class=" " />
+                    <h6><span>UI/UX</span></h6>
+                  </a>
+                </div>
+                <ul>
+                  <li>
+                    <a
+                      href="#"
+                      data-toggle="modal"
+                      onclick="curriculum()"
+                      class="curriculum"
+                      data-target="#get_trained"
+                      ><img
+                        src="images/darrow.png"
+                        alt="Full Stack Development"
+                        class=" "
+                      />
+                      Download <br />Curriculum</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="ui-ux-desgining-job-ready-program-in-hyderabad.html"
+                      ><img
+                        src="images/rarrow.png"
+                        alt="Full Stack Development"
+                        class=" "
+                      />
+                      View Program</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="firstlearn">
-        <div class="channels">
-            <div class="container">
-                <h6>Awards and Recognitations</h6>
-                <div class="channellogos">
-                    <img src="images/forbes.jpg" alt="Awards and Recognitations" class="">
-                    <img src="images/today.jpg" alt="Awards and Recognitations" class="">
-                    <img src="images/urban.jpg" alt="Awards and Recognitations" class="">
-                    <img src="images/dial.jpg" alt="Awards and Recognitations" class="">
-                    <img src="images/sulekha.jpg" alt="Awards and Recognitations" class="">
-                </div>
-
-                <h6>Featured in News Paper & News Channel</h6>
-                <div class="channellogos">
-                    <img src="images/times.jpg" alt="News Channel" class="">
-                    <img src="images/etv.jpg" alt="News Channel" class="">
-                    <img src="images/tnews.jpg" alt="News Channel" class="">
-                    <img src="images/cvr.jpg" alt="News Channel" class="">
-                    <img src="images/tv5.jpg" alt="News Channel" class="">
-                </div>
-            </div>
-        </div>
-
-
+      <div class="channels">
         <div class="container">
-            <h2>First-Ever <span>Hybrid Learning System</span></h2>
-            <p>Enjoy the flexibility of selecting online or offline classes with Digital-Lync first-ever hybrid learning model.<br>
-                Get the fruitful chance of choosing between the privilege of learning from home or the<br>
-                advantage of one-on-one knowledge gaining - all in one place.
-            </p>
-            <div class="row pad_t50">
-                <div class="col-md-5"><img src="images/telecommuting-rafiki.svg" alt="Learn From Home" class="wow fadeInDown animated animated">
+          <h6>Awards and Recognitations</h6>
+          <div class="channellogos">
+            <img
+              src="images/forbes.jpg"
+              alt="Awards and Recognitations"
+              class=""
+            />
+            <img
+              src="images/today.jpg"
+              alt="Awards and Recognitations"
+              class=""
+            />
+            <img
+              src="images/urban.jpg"
+              alt="Awards and Recognitations"
+              class=""
+            />
+            <img
+              src="images/dial.jpg"
+              alt="Awards and Recognitations"
+              class=""
+            />
+            <img
+              src="images/sulekha.jpg"
+              alt="Awards and Recognitations"
+              class=""
+            />
+          </div>
 
-                    <h3>Learn from Home</h3>
-                    <p>Why leave the comfort and safety of your home when you can learn the eminent non-technical courses right at your fingertips? Gig up to upskill yourself from home with Digital-Lync online courses.
-                    </p>
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-5">
-                    <img src="images/office-rafiki.svg" alt="Learn From Home" class="wow fadeInDown animated animated">
-                    <h3>Learn from Classroom</h3>
-                    <p>Exploit the high-tech face-to-face learning experience with esteemed professional educators at Digital-Lync. Our well-equipped, safe, and secure classrooms are waiting to get you on board!
-                    </p>
-                </div>
-                <div class="or wow fadeInUp animated animated">
-                    <span>OR</span>
-                </div>
-            </div>
+          <h6>Featured in News Paper & News Channel</h6>
+          <div class="channellogos">
+            <img src="images/times.jpg" alt="News Channel" class="" />
+            <img src="images/etv.jpg" alt="News Channel" class="" />
+            <img src="images/tnews.jpg" alt="News Channel" class="" />
+            <img src="images/cvr.jpg" alt="News Channel" class="" />
+            <img src="images/tv5.jpg" alt="News Channel" class="" />
+          </div>
         </div>
+      </div>
+
+      <div class="container">
+        <h2>First-Ever <span>Hybrid Learning System</span></h2>
+        <p>
+          Enjoy the flexibility of selecting online or offline classes with
+          Digital-Lync first-ever hybrid learning model.<br />
+          Get the fruitful chance of choosing between the privilege of learning
+          from home or the<br />
+          advantage of one-on-one knowledge gaining - all in one place.
+        </p>
+        <div class="row pad_t50">
+          <div class="col-md-5">
+            <img
+              src="images/telecommuting-rafiki.svg"
+              alt="Learn From Home"
+              class="wow fadeInDown animated animated"
+            />
+
+            <h3>Learn from Home</h3>
+            <p>
+              Why leave the comfort and safety of your home when you can learn
+              the eminent non-technical courses right at your fingertips? Gig up
+              to upskill yourself from home with Digital-Lync online courses.
+            </p>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-5">
+            <img
+              src="images/office-rafiki.svg"
+              alt="Learn From Home"
+              class="wow fadeInDown animated animated"
+            />
+            <h3>Learn from Classroom</h3>
+            <p>
+              Exploit the high-tech face-to-face learning experience with
+              esteemed professional educators at Digital-Lync. Our
+              well-equipped, safe, and secure classrooms are waiting to get you
+              on board!
+            </p>
+          </div>
+          <div class="or wow fadeInUp animated animated">
+            <span>OR</span>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="costemi">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>No Cost EMI Available</h4>
-                    <h3>Learn Now.Pay Later</h3>
-                    <p>We understand the importance of education and hence provide a Learn Now – Pay Later scheme to students/ individuals who cannot afford the course fees right away but are dedicated to the learning process.</p>
-                    <div class="getembt">
-                        <a href="#" class="button_normal animated-arrow wow fadeInUp animated" data-toggle="modal" data-target="#get_trained"><span class="the-arrow -left"> <span class="shaft"></span> </span> <span class="main"> <span class="text">GET EMI NOW</span></span></a>
-                    </div>
-                    <h6>EMI Partner</h6>
-                    <img src="images/skill_logo.jpg" alt="EMI Partner">
-                </div>
-                <div class="col-md-6"> <img src="images/emicost.jpg" alt="Learn Now Pay Later"> </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>No Cost EMI Available</h4>
+            <h3>Learn Now.Pay Later</h3>
+            <p>
+              We understand the importance of education and hence provide a
+              Learn Now – Pay Later scheme to students/ individuals who cannot
+              afford the course fees right away but are dedicated to the
+              learning process.
+            </p>
+            <div class="getembt">
+              <a
+                href="#"
+                id="getEMI"
+                onclick="getEMI()"
+                class="button_normal animated-arrow wow fadeInUp animated"
+                data-toggle="modal"
+                data-target="#get_trained"
+                ><span class="the-arrow -left">
+                  <span class="shaft"></span>
+                </span>
+                <span class="main">
+                  <span class="text">GET EMI NOW</span></span
+                ></a
+              >
             </div>
+            <h6>EMI Partner</h6>
+            <img src="images/skill_logo.jpg" alt="EMI Partner" />
+          </div>
+          <div class="col-md-6">
+            <img src="images/emicost.jpg" alt="Learn Now Pay Later" />
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="covidreay">
-        <div class="container">
-            <h3 class="wow fadeInUp animated animated" style="visibility: visible;">Covid Ready Campus</h3>
+      <div class="container">
+        <h3 class="wow fadeInUp animated animated" style="visibility: visible">
+          Covid Ready Campus
+        </h3>
 
-            <div class="covidimg">
-                <img src="images/covidsafe.svg" alt="covid ready campus" title="covid ready campus" class="wow fadeInUp animated animated" style="visibility: visible;">
-            </div>
-
-            <div class="getembt text-center">
-                <a href="#" class="button_normal animated-arrow wow fadeInUp animated animated" data-toggle="modal" data-target="#get_trained" style="visibility: visible;"><span class="the-arrow -left"> <span class="shaft"></span> </span> <span class="main"> <span class="text">JOIN NOW</span></span></a>
-
-            </div>
+        <div class="covidimg">
+          <img
+            src="images/covidsafe.svg"
+            alt="covid ready campus"
+            title="covid ready campus"
+            class="wow fadeInUp animated animated"
+            style="visibility: visible"
+          />
         </div>
+
+        <div class="getembt text-center">
+          <a
+            href="#"
+            onclick="joinNow()"
+            class="button_normal animated-arrow wow fadeInUp animated animated"
+            data-toggle="modal"
+            data-target="#get_trained"
+            style="visibility: visible"
+            ><span class="the-arrow -left"> <span class="shaft"></span> </span>
+            <span class="main"> <span class="text">JOIN NOW</span></span></a
+          >
+        </div>
+      </div>
     </div>
 
     <div class="ourteam">
-        <div class="container">
-            <h3 class=" wow fadeInUp animated">Our Team</h3>
-            <h5 class=" wow fadeInUp animated">As training professionals, we take learning and development seriously and we possess the demonstrated teaching<br> experience on top of our professional qualifications. Meet our hard working and experienced training professional team.</h5>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="teamrow  wow fadeInUp animated">
-                        <div class="howimg"> <img src="images/sai.png" alt="Sai Kumar"></div>
+      <div class="container">
+        <h3 class="wow fadeInUp animated">Our Team</h3>
+        <h5 class="wow fadeInUp animated">
+          As training professionals, we take learning and development seriously
+          and we possess the demonstrated teaching<br />
+          experience on top of our professional qualifications. Meet our hard
+          working and experienced training professional team.
+        </h5>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="teamrow wow fadeInUp animated">
+              <div class="howimg">
+                <img src="images/sai.png" alt="Sai Kumar" />
+              </div>
 
-                        <h4>Sai Kumar</h4>
-                        <p>Sai Kumar is our Director of Full Stack Engineering, will empower you to achieve your best in technology.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="teamrow  wow fadeInUp animated">
-                        <div class="howimg"> <img src="images/mani.png" alt="Manikanta Kona"></div>
-                        <h4>Manikanta Kona</h4>
-                        <p>Meet our CEO,Manikanta Kona who is a visionary leader whose mission is to provide world class education.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="teamrow  wow fadeInUp animated">
-                        <div class="howimg"> <img src="images/ganesh.png" alt="Ganesh"></div>
-                        <h4>Ganesh</h4>
-                        <p>Ganesh is our advisor who is central to leading the team and assisting them to achieve its stated goals.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="teamrow  wow fadeInUp animated">
-                        <div class="howimg"> <img src="images/kishore.png" alt="Kishore"></div>
-                        <h4>Sai Kishore</h4>
-                        <p>Meet our CTO, Sai Kishore who is recognized as leader of Information Technology,skilling and employability.</p>
-                    </div>
-                </div>
+              <h4>Sai Kumar</h4>
+              <p>
+                Sai Kumar is our Director of Full Stack Engineering, will
+                empower you to achieve your best in technology.
+              </p>
             </div>
+          </div>
+          <div class="col-md-3">
+            <div class="teamrow wow fadeInUp animated">
+              <div class="howimg">
+                <img src="images/mani.png" alt="Manikanta Kona" />
+              </div>
+              <h4>Manikanta Kona</h4>
+              <p>
+                Meet our CEO,Manikanta Kona who is a visionary leader whose
+                mission is to provide world class education.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="teamrow wow fadeInUp animated">
+              <div class="howimg">
+                <img src="images/ganesh.png" alt="Ganesh" />
+              </div>
+              <h4>Ganesh</h4>
+              <p>
+                Ganesh is our advisor who is central to leading the team and
+                assisting them to achieve its stated goals.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="teamrow wow fadeInUp animated">
+              <div class="howimg">
+                <img src="images/kishore.png" alt="Kishore" />
+              </div>
+              <h4>Sai Kishore</h4>
+              <p>
+                Meet our CTO, Sai Kishore who is recognized as leader of
+                Information Technology,skilling and employability.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="container">
-        <div class="whatlearn">
-            <h4 class=" wow fadeInUp animated">What our learners have to say</h4>
-            <div id="clients" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#clients" data-slide-to="0" class="active"></li>
-                    <li data-target="#clients" data-slide-to="1"></li>
-                    <li data-target="#clients" data-slide-to="2"></li>
-                </ol>
+      <div class="whatlearn">
+        <h4 class="wow fadeInUp animated">What our learners have to say</h4>
+        <div id="clients" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#clients" data-slide-to="0" class="active"></li>
+            <li data-target="#clients" data-slide-to="1"></li>
+            <li data-target="#clients" data-slide-to="2"></li>
+          </ol>
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="whatlearn_row">
-                            <div class="row">
-                                <div class="col-md-5"><img src="images/image1.png" alt="Kavya" class="learnersimg"><a id="" class="video-play-button" data-target="#digitalmarket_video" data-toggle="modal"> <span></span> </a></div>
-                                <div class="col-md-7">
-                                    <div class="learnslidecnt">
-                                        <h6>Shilpa</h6>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="whatlearn_row">
+                <div class="row">
+                  <div class="col-md-5">
+                    <img
+                      src="images/image1.png"
+                      alt="Kavya"
+                      class="learnersimg"
+                    /><a
+                      id=""
+                      class="video-play-button"
+                      data-target="#digitalmarket_video"
+                      data-toggle="modal"
+                    >
+                      <span></span>
+                    </a>
+                  </div>
+                  <div class="col-md-7">
+                    <div class="learnslidecnt">
+                      <h6>Shilpa</h6>
 
-                                        <center>Digital-Lync is one such institute where good talent is found. Teachers over here have profound knowledge on what they teach. I took full stack web dev course which made me a hero from zero. I got placed as an software engineer after taking valuable sessions from such great teachers. Thank you Digital Lync for your support.</center>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                      <center>
+                        Digital-Lync is one such institute where good talent is
+                        found. Teachers over here have profound knowledge on
+                        what they teach. I took full stack web dev course which
+                        made me a hero from zero. I got placed as an software
+                        engineer after taking valuable sessions from such great
+                        teachers. Thank you Digital Lync for your support.
+                      </center>
                     </div>
-                    <div class="item">
-                        <div class="whatlearn_row">
-                            <div class="row">
-                                <div class="col-md-5"><img src="images/image1.png" alt="Raju Nikhil" class="learnersimg"><a id="" class="video-play-button" data-target="#digitalmarket_video" data-toggle="modal"> <span></span> </a></div>
-                                <div class="col-md-7">
-                                    <div class="learnslidecnt">
-                                        <h6>Sowmya Kunapuli </h6>
-
-                                        <center>It has been a very good school of learning, trainer explains every individual concept (Theory/Practical) in-depth when I joined for Job Ready Program at the Gachibowli branch Hyderabad. It has an extraordinary infrastructure with un-interrupted broadband. Your doubts can be clarified with live projects. Altogether it was an awesome experience learning in Digital Lync.</center>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="whatlearn_row">
-                            <div class="row">
-                                <div class="col-md-5"><img src="images/image1.png" alt="Kavya" class="learnersimg"><a id="" class="video-play-button" data-target="#digitalmarket_video" data-toggle="modal"> <span></span> </a></div>
-                                <div class="col-md-7">
-                                    <div class="learnslidecnt">
-                                        <h6>Vaibhav Vitta</h6>
-                                        <!--<p class="bluetext">Full Stack Developer</p> -->
-                                        <center>I have completed the Job Ready Program at Digital Lync Technologies. It was an awesome experience to undergo such intense and in-depth training. The trainer is well experienced and knowledgeable person and trained us in very sophisticated manner. The main advantage of the training was every student was given personal attention in coaching of every module. Students are provided with separate study place so that they can practise every days work and complete their assignments given. </center>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#clients" data-slide="prev"></a>
-                <a class="right carousel-control" href="#clients" data-slide="next"> </a>
+              </div>
             </div>
+            <div class="item">
+              <div class="whatlearn_row">
+                <div class="row">
+                  <div class="col-md-5">
+                    <img
+                      src="images/image1.png"
+                      alt="Raju Nikhil"
+                      class="learnersimg"
+                    /><a
+                      id=""
+                      class="video-play-button"
+                      data-target="#digitalmarket_video"
+                      data-toggle="modal"
+                    >
+                      <span></span>
+                    </a>
+                  </div>
+                  <div class="col-md-7">
+                    <div class="learnslidecnt">
+                      <h6>Sowmya Kunapuli</h6>
+
+                      <center>
+                        It has been a very good school of learning, trainer
+                        explains every individual concept (Theory/Practical)
+                        in-depth when I joined for Job Ready Program at the
+                        Gachibowli branch Hyderabad. It has an extraordinary
+                        infrastructure with un-interrupted broadband. Your
+                        doubts can be clarified with live projects. Altogether
+                        it was an awesome experience learning in Digital Lync.
+                      </center>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="whatlearn_row">
+                <div class="row">
+                  <div class="col-md-5">
+                    <img
+                      src="images/image1.png"
+                      alt="Kavya"
+                      class="learnersimg"
+                    /><a
+                      id=""
+                      class="video-play-button"
+                      data-target="#digitalmarket_video"
+                      data-toggle="modal"
+                    >
+                      <span></span>
+                    </a>
+                  </div>
+                  <div class="col-md-7">
+                    <div class="learnslidecnt">
+                      <h6>Vaibhav Vitta</h6>
+                      <!--<p class="bluetext">Full Stack Developer</p> -->
+                      <center>
+                        I have completed the Job Ready Program at Digital Lync
+                        Technologies. It was an awesome experience to undergo
+                        such intense and in-depth training. The trainer is well
+                        experienced and knowledgeable person and trained us in
+                        very sophisticated manner. The main advantage of the
+                        training was every student was given personal attention
+                        in coaching of every module. Students are provided with
+                        separate study place so that they can practise every
+                        days work and complete their assignments given.
+                      </center>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Left and right controls -->
+          <a
+            class="left carousel-control"
+            href="#clients"
+            data-slide="prev"
+          ></a>
+          <a class="right carousel-control" href="#clients" data-slide="next">
+          </a>
         </div>
+      </div>
     </div>
     <div class="container">
-        <div class="faq">
-            <h3 class=" wow fadeInUp animated">FAQ's</h3>
-            <div class="accordion pad_t30" id="accordion2">
-                <div class="panel panel-default card wow fadeInDown animated animated">
-                    <div class="card-header" id="headingFaqEight"> <a class="btn collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFaqEight"> Who is eligible for this program? <span class="updown_arrow"><i class="fa fa-angle-down "></i></span></a> </div>
-                    <div id="collapseFaqEight" class="panel-collapse collapse" style="height: 0px;">
-                        <div class="card-body">
-                            <p> Any Btech/BE /MTech final year and passed outs are eligible for this program.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default card wow fadeInDown animated animated">
-                    <div class="card-header" id="headingFaqNine"> <a class="btn collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFaqNine"> What is the duration of the program? <span class="updown_arrow"><i class="fa fa-angle-down"></i></span></a> </div>
-                    <div id="collapseFaqNine" class="panel-collapse collapse" style="height: 0px;">
-                        <div class="card-body">
-                            <p>It is a 16 week program. After the completion of the program, the student gets paid internship for
-                                2 Months and then placements.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default card wow fadeInDown animated animated">
-                    <div class="card-header" id="headingFaqTen"> <a class="btn collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFaqTen"> Do I get the assured placement? <span class="updown_arrow"><i class="fa fa-angle-down"></i></span></a> </div>
-                    <div id="collapseFaqTen" class="panel-collapse collapse" style="height: 0px;">
-                        <div class="card-body">
-                            <p>Yes</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default card wow fadeInDown animated animated">
-                    <div class="card-header" id="headingFaqEleven"> <a class="btn collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFaqEleven"> What is the basic academic percentage required to <br>enroll for the course? <span class="updown_arrow"><i class="fa fa-angle-down"></i></span></a> </div>
-                    <div id="collapseFaqEleven" class="panel-collapse collapse" style="height: 0px;">
-                        <div class="card-body">
-                            <p>60% in btech/BE/ Mtech is eligible to enroll for the course.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default card wow fadeInDown animated animated">
-                    <div class="card-header" id="headingFaqThirteen"> <a class="btn collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFaqThirteen"> What is the execution plan of the program? <span class="updown_arrow"><i class="fa fa-angle-down"></i></span></a> </div>
-                    <div id="collapseFaqThirteen" class="panel-collapse collapse" style="height: 0px;">
-                        <div class="card-body">
-                            <p>2 Hours Lecture + 2 Hours of Practice + 2 Hours of Assignments + 2 Hours of Exploration </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default card wow fadeInDown animated animated">
-                    <div class="card-header" id="headingFaqFourteen"> <a class="btn collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFaqFourteen"> Can we take this course online? <span class="updown_arrow"><i class="fa fa-angle-down"></i></span></a> </div>
-                    <div id="collapseFaqFourteen" class="panel-collapse collapse" style="height: 0px;">
-                        <div class="card-body">
-                            <p>Yes, This course is applicable for offline and online students.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default card wow fadeInDown animated animated">
-                    <div class="card-header" id="headingFaqFifteen"> <a class="btn collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFaqFifteen"> I am already employed, will I be eligible for the program? <span class="updown_arrow"><i class="fa fa-angle-down"></i></span></a> </div>
-                    <div id="collapseFaqFifteen" class="panel-collapse collapse" style="height: 0px;">
-                        <div class="card-body">
-                            <p>No. Only students looking for a job as a fresher is eligible for the program.</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="panel panel-default card wow fadeInDown animated animated">
-                    <div class="card-header" id="headingFaqSixteen"> <a class="btn collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFaqSixteen"> Due to an emergency, If I miss the session? <span class="updown_arrow"><i class="fa fa-angle-down"></i></span></a> </div>
-                    <div id="collapseFaqSixteen" class="panel-collapse collapse" style="height: 0px;">
-                        <div class="card-body">
-                            <p>You will get a recording of the live session.</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="panel panel-default card wow fadeInDown animated animated">
-                    <div class="card-header" id="headingFaqSevnteen"> <a class="btn collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFaqSevnteen"> Do you provide any certificate after the program? <span class="updown_arrow"><i class="fa fa-angle-down"></i></span></a> </div>
-                    <div id="collapseFaqSevnteen" class="panel-collapse collapse" style="height: 0px;">
-                        <div class="card-body">
-                            <p>You get a course completion certificate and internship certificate from DigitalLync.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+      <div class="faq">
+        <h3 class="wow fadeInUp animated">FAQ's</h3>
+        <div class="accordion pad_t30" id="accordion2">
+          <div
+            class="panel panel-default card wow fadeInDown animated animated"
+          >
+            <div class="card-header" id="headingFaqEight">
+              <a
+                class="btn collapsed"
+                data-toggle="collapse"
+                data-parent="#accordion2"
+                href="#collapseFaqEight"
+              >
+                Who is eligible for this program?
+                <span class="updown_arrow"
+                  ><i class="fa fa-angle-down"></i></span
+              ></a>
             </div>
+            <div
+              id="collapseFaqEight"
+              class="panel-collapse collapse"
+              style="height: 0px"
+            >
+              <div class="card-body">
+                <p>
+                  Any Btech/BE /MTech final year and passed outs are eligible
+                  for this program.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="panel panel-default card wow fadeInDown animated animated"
+          >
+            <div class="card-header" id="headingFaqNine">
+              <a
+                class="btn collapsed"
+                data-toggle="collapse"
+                data-parent="#accordion2"
+                href="#collapseFaqNine"
+              >
+                What is the duration of the program?
+                <span class="updown_arrow"
+                  ><i class="fa fa-angle-down"></i></span
+              ></a>
+            </div>
+            <div
+              id="collapseFaqNine"
+              class="panel-collapse collapse"
+              style="height: 0px"
+            >
+              <div class="card-body">
+                <p>
+                  It is a 16 week program. After the completion of the program,
+                  the student gets paid internship for 2 Months and then
+                  placements.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="panel panel-default card wow fadeInDown animated animated"
+          >
+            <div class="card-header" id="headingFaqTen">
+              <a
+                class="btn collapsed"
+                data-toggle="collapse"
+                data-parent="#accordion2"
+                href="#collapseFaqTen"
+              >
+                Do I get the assured placement?
+                <span class="updown_arrow"
+                  ><i class="fa fa-angle-down"></i></span
+              ></a>
+            </div>
+            <div
+              id="collapseFaqTen"
+              class="panel-collapse collapse"
+              style="height: 0px"
+            >
+              <div class="card-body">
+                <p>Yes</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="panel panel-default card wow fadeInDown animated animated"
+          >
+            <div class="card-header" id="headingFaqEleven">
+              <a
+                class="btn collapsed"
+                data-toggle="collapse"
+                data-parent="#accordion2"
+                href="#collapseFaqEleven"
+              >
+                What is the basic academic percentage required to <br />enroll
+                for the course?
+                <span class="updown_arrow"
+                  ><i class="fa fa-angle-down"></i></span
+              ></a>
+            </div>
+            <div
+              id="collapseFaqEleven"
+              class="panel-collapse collapse"
+              style="height: 0px"
+            >
+              <div class="card-body">
+                <p>
+                  60% in btech/BE/ Mtech is eligible to enroll for the course.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="panel panel-default card wow fadeInDown animated animated"
+          >
+            <div class="card-header" id="headingFaqThirteen">
+              <a
+                class="btn collapsed"
+                data-toggle="collapse"
+                data-parent="#accordion2"
+                href="#collapseFaqThirteen"
+              >
+                What is the execution plan of the program?
+                <span class="updown_arrow"
+                  ><i class="fa fa-angle-down"></i></span
+              ></a>
+            </div>
+            <div
+              id="collapseFaqThirteen"
+              class="panel-collapse collapse"
+              style="height: 0px"
+            >
+              <div class="card-body">
+                <p>
+                  2 Hours Lecture + 2 Hours of Practice + 2 Hours of Assignments
+                  + 2 Hours of Exploration
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="panel panel-default card wow fadeInDown animated animated"
+          >
+            <div class="card-header" id="headingFaqFourteen">
+              <a
+                class="btn collapsed"
+                data-toggle="collapse"
+                data-parent="#accordion2"
+                href="#collapseFaqFourteen"
+              >
+                Can we take this course online?
+                <span class="updown_arrow"
+                  ><i class="fa fa-angle-down"></i></span
+              ></a>
+            </div>
+            <div
+              id="collapseFaqFourteen"
+              class="panel-collapse collapse"
+              style="height: 0px"
+            >
+              <div class="card-body">
+                <p>
+                  Yes, This course is applicable for offline and online
+                  students.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="panel panel-default card wow fadeInDown animated animated"
+          >
+            <div class="card-header" id="headingFaqFifteen">
+              <a
+                class="btn collapsed"
+                data-toggle="collapse"
+                data-parent="#accordion2"
+                href="#collapseFaqFifteen"
+              >
+                I am already employed, will I be eligible for the program?
+                <span class="updown_arrow"
+                  ><i class="fa fa-angle-down"></i></span
+              ></a>
+            </div>
+            <div
+              id="collapseFaqFifteen"
+              class="panel-collapse collapse"
+              style="height: 0px"
+            >
+              <div class="card-body">
+                <p>
+                  No. Only students looking for a job as a fresher is eligible
+                  for the program.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="panel panel-default card wow fadeInDown animated animated"
+          >
+            <div class="card-header" id="headingFaqSixteen">
+              <a
+                class="btn collapsed"
+                data-toggle="collapse"
+                data-parent="#accordion2"
+                href="#collapseFaqSixteen"
+              >
+                Due to an emergency, If I miss the session?
+                <span class="updown_arrow"
+                  ><i class="fa fa-angle-down"></i></span
+              ></a>
+            </div>
+            <div
+              id="collapseFaqSixteen"
+              class="panel-collapse collapse"
+              style="height: 0px"
+            >
+              <div class="card-body">
+                <p>You will get a recording of the live session.</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="panel panel-default card wow fadeInDown animated animated"
+          >
+            <div class="card-header" id="headingFaqSevnteen">
+              <a
+                class="btn collapsed"
+                data-toggle="collapse"
+                data-parent="#accordion2"
+                href="#collapseFaqSevnteen"
+              >
+                Do you provide any certificate after the program?
+                <span class="updown_arrow"
+                  ><i class="fa fa-angle-down"></i></span
+              ></a>
+            </div>
+            <div
+              id="collapseFaqSevnteen"
+              class="panel-collapse collapse"
+              style="height: 0px"
+            >
+              <div class="card-body">
+                <p>
+                  You get a course completion certificate and internship
+                  certificate from DigitalLync.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="locations">
-        <div class="container text-center">
-            <h2 class="heading-7 wow fadeInUp animated"> Locations </h2>
-            <h6 class="heading-8 wow fadeInDown animated"> Come and chat with us about your goals over a cup of coffee </h6>
-            <div class="card-deck pad_t30">
-                <div class="row">
-                    <div class="col-md-3 loc_card col-12">
-                        <div class="card cursorPointer wow fadeInUp animated"> <img src="images/hyderabadLocation.jpg" class="" alt="Digital Lync Hyderabad" title="Digital Lync Hyderabad " />
-                            <div class="card-body col-12">
-                                <h5 class="">Hyderabad</h5>
-                                <p class=" loc_card_p">1<sup>st</sup> Floor, Plot No: 6-11, survey No., 40 Khajaguda, Naga Hills Rd, Madhura Nagar Colony, Gachibowli Hyderabad, Telangana 500008 <br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 loc_card col-12">
-                        <div class="card cursorPointer wow fadeInUp animated"> <img src="images/vizag.jpg" class="" alt="Digital Lync Vizag" title="Digital Lync Vizag" />
-                            <div class="card-body col-12">
-                                <h5 class="">Vizag</h5>
-                                <p class="loc_card_p">2nd- floor VTC-Vinaygar Trade Centre,
-                                    VIP Rd, CBM Compound,
-                                    Visakhapatnam, Andhra Pradesh 530003 <br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 loc_card col-12">
-                        <div class="card cursorPointer wow fadeInUp animated"> <img src="images/malaysia-location.jpg" class="" alt="Digital Lync Malayisa" title="Digital Lync Malayisa" />
-                            <div class="card-body col-12">
-                                <h5 class="">Malaysia</h5>
-                                <p class="loc_card_p">11, Pusat Dagang Seksyen 16 Seksyen 16, 46350 Petaling Jaya Selangor, Malaysia <br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 loc_card col-12">
-                        <div class="card cursorPointer wow fadeInUp animated"> <img src="images/usa.jpg" class="" alt="Digital Lync USA" title="Digital Lync USA" />
-                            <div class="card-body ">
-                                <h5 class="">USA</h5>
-                                <p class="loc_card_p">#23664, Richland Grove Dr, Ashburn, VA 20148 <br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container text-center">
+        <h2 class="heading-7 wow fadeInUp animated">Locations</h2>
+        <h6 class="heading-8 wow fadeInDown animated">
+          Come and chat with us about your goals over a cup of coffee
+        </h6>
+        <div class="card-deck pad_t30">
+          <div class="row">
+            <div class="col-md-3 loc_card col-12">
+              <div class="card cursorPointer wow fadeInUp animated">
+                <img
+                  src="images/hyderabadLocation.jpg"
+                  class=""
+                  alt="Digital Lync Hyderabad"
+                  title="Digital Lync Hyderabad "
+                />
+                <div class="card-body col-12">
+                  <h5 class="">Hyderabad</h5>
+                  <p class="loc_card_p">
+                    1<sup>st</sup> Floor, Plot No: 6-11, survey No., 40
+                    Khajaguda, Naga Hills Rd, Madhura Nagar Colony, Gachibowli
+                    Hyderabad, Telangana 500008 <br />
+                  </p>
                 </div>
+              </div>
             </div>
+            <div class="col-md-3 loc_card col-12">
+              <div class="card cursorPointer wow fadeInUp animated">
+                <img
+                  src="images/vizag.jpg"
+                  class=""
+                  alt="Digital Lync Vizag"
+                  title="Digital Lync Vizag"
+                />
+                <div class="card-body col-12">
+                  <h5 class="">Vizag</h5>
+                  <p class="loc_card_p">
+                    2nd- floor VTC-Vinaygar Trade Centre, VIP Rd, CBM Compound,
+                    Visakhapatnam, Andhra Pradesh 530003 <br />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 loc_card col-12">
+              <div class="card cursorPointer wow fadeInUp animated">
+                <img
+                  src="images/malaysia-location.jpg"
+                  class=""
+                  alt="Digital Lync Malayisa"
+                  title="Digital Lync Malayisa"
+                />
+                <div class="card-body col-12">
+                  <h5 class="">Malaysia</h5>
+                  <p class="loc_card_p">
+                    11, Pusat Dagang Seksyen 16 Seksyen 16, 46350 Petaling Jaya
+                    Selangor, Malaysia <br />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 loc_card col-12">
+              <div class="card cursorPointer wow fadeInUp animated">
+                <img
+                  src="images/usa.jpg"
+                  class=""
+                  alt="Digital Lync USA"
+                  title="Digital Lync USA"
+                />
+                <div class="card-body">
+                  <h5 class="">USA</h5>
+                  <p class="loc_card_p">
+                    #23664, Richland Grove Dr, Ashburn, VA 20148 <br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="ftrtop">
-        <div class="container">
-            <h5 class=" wow fadeInUp animated">Kick Start Your Career</h5>
-            <p class=" wow fadeInUp animated">join the the most awaited customised training program<br> providing robust coverage of skills and making you job ready </p>
-            <a href="#" class="joinow" data-toggle="modal" data-target="#get_trained">Join Now</a>
-        </div>
+      <div class="container">
+        <h5 class="wow fadeInUp animated">Kick Start Your Career</h5>
+        <p class="wow fadeInUp animated">
+          join the the most awaited customised training program<br />
+          providing robust coverage of skills and making you job ready
+        </p>
+        <a
+          href="#"
+          onclick="joinNow()"
+          class="joinow"
+          data-toggle="modal"
+          data-target="#get_trained"
+          >Join Now</a
+        >
+      </div>
     </div>
 
-    <a class="btn_caller fade-in one animated zoomIn" href="javascript:void(0)"> <img src="images/call_o_o.png" alt="Call Us" title="Call Us"></a>
+    <a class="btn_caller fade-in one animated zoomIn" href="javascript:void(0)">
+      <img src="images/call_o_o.png" alt="Call Us" title="Call Us"
+    /></a>
     <div class="modal_caller">
-        <div class="head_caller"> <span class="contact_txt_caller">Call Us (Or) Whatsapp Us</span> <a class="close_call_btn_caller" href="javascript:;"> <img src="images/call_c_c.png" alt="" title="Close"></a> </div>
-        <div class="content_caller"> <a class="popupNumber" href="tel:+917093131616">+91 70931 31616</a></div>
+      <div class="head_caller">
+        <span class="contact_txt_caller">Call Us (Or) Whatsapp Us</span>
+        <a class="close_call_btn_caller" href="javascript:;">
+          <img src="images/call_c_c.png" alt="" title="Close"
+        /></a>
+      </div>
+      <div class="content_caller">
+        <a class="popupNumber" href="tel:+917093131616">+91 70931 31616</a>
+      </div>
     </div>
 
     <div id="get_trained" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">×</button>
-                    <h4 class="modal-title">Get Skilled</h4>
-                </div>
-                <div class="modal-body">
-                    <form role="form" method="post" id="contactform">
-                        <label> Full Name <sup>*</sup></label>
-                        <input type="text" class="" id="name" name="username" required maxlength="50">
-                        <label> Phone Number <sup>*</sup> </label>
-                        <input type="number" class="" id="phone" name="phone" required maxlength="50">
-                        <label> Email <sup>*</sup> </label>
-                        <input type="text" class="" id="email" name="email" required>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4 class="modal-title">Get Skilled</h4>
+          </div>
+          <div class="modal-body">
+            <form role="form" method="post" id="contactform">
+              <label> Full Name <sup>*</sup></label>
+              <input
+                type="text"
+                class=""
+                id="name"
+                name="username"
+                required
+                maxlength="50"
+              />
+              <label> Phone Number <sup>*</sup> </label>
+              <input
+                type="number"
+                class=""
+                id="phone"
+                name="phone"
+                required
+                maxlength="50"
+              />
+              <label> Email <sup>*</sup> </label>
+              <input type="text" class="" id="email" name="email" required />
 
-                        <input type="hidden" class="" id="technology" name="technology" value="Job Ready Program">
+              <input
+                type="hidden"
+                class=""
+                id="technology"
+                name="technology"
+                value="Job Ready Program"
+              />
 
-                        <button type="submit" class="btn btn-success ">Submit </button>
+              <button type="submit" class="btn btn-success">Submit</button>
 
-                        <div id="success_message" style="width:100%; height:100%; display:none; ">
-                            <h3>Sent your message successfully!</h3>
-                        </div>
-                        <div id="error_message" style="width:100%; height:100%; display:none; ">
-                            <h3>Error</h3> Sorry there was an error sending your form.
-                        </div>
-
-                    </form>
-                </div>
-            </div>
+              <div
+                id="success_message"
+                style="width: 100%; height: 100%; display: none"
+              >
+                <h3>Sent your message successfully!</h3>
+              </div>
+              <div
+                id="error_message"
+                style="width: 100%; height: 100%; display: none"
+              >
+                <h3>Error</h3>
+                Sorry there was an error sending your form.
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
     <div class="modal_caller">
-        <div class="head_caller"> <span class="contact_txt_caller">Call Us (Or) Whatsapp Us</span> <a class="close_call_btn_caller" href="javascript:;"> <img src="images/call_c_c.png" alt="" title="Close"></a> </div>
-        <div class="content_caller"> <a class="popupNumber" href="tel:+916304982304">+91 6304982304</a></div>
+      <div class="head_caller">
+        <span class="contact_txt_caller">Call Us (Or) Whatsapp Us</span>
+        <a class="close_call_btn_caller" href="javascript:;">
+          <img src="images/call_c_c.png" alt="" title="Close"
+        /></a>
+      </div>
+      <div class="content_caller">
+        <a class="popupNumber" href="tel:+916304982304">+91 6304982304</a>
+      </div>
     </div>
     <footer class="footer">
-        <div class="container">
-            <ul class="wow fadeInUp animated">
-                <li class=""> <a href="#" class="">Courses </a> </li>
-                <li class=""> <a href="#" class="">Programs </a> </li>
-                <li class=""> <a href="#" class="">Contact Us </a> </li>
-                <li class=""><a href="#" target="_blank"> Online Pay </a> </li>
-                <li class=""><a href="#" target="_blank"><span>Sign In</span></a></li>
-                <li class=""><a href="#" target="_blank"><span>Sign Up</span></a></li>
-            </ul>
-            <div class="social_icons wow fadeInUp animated">
-                <ul>
-                    <li class="d-inline-block"> <a href="#" class="fs24" target="_blank"> <i class="fa fa-facebook"></i> </a> </li>
-                    <li class="d-inline-block"> <a href="#" class="fs24" target="_blank"> <i class="fa fa-twitter"></i> </a> </li>
-                    <li class="d-inline-block"> <a href="#" class="fs24" target="_blank"> <i class="fa fa-linkedin"></i> </a> </li>
-                    <li class="d-inline-block"> <a href="#" class="fs24" target="_blank"> <i class="fa fa-instagram"></i> </a> </li>
-                </ul>
-            </div>
+      <div class="container">
+        <ul class="wow fadeInUp animated">
+          <li class=""><a href="#" class="">Courses </a></li>
+          <li class=""><a href="#" class="">Programs </a></li>
+          <li class=""><a href="#" class="">Contact Us </a></li>
+          <li class=""><a href="#" target="_blank"> Online Pay </a></li>
+          <li class="">
+            <a href="#" target="_blank"><span>Sign In</span></a>
+          </li>
+          <li class="">
+            <a href="#" target="_blank"><span>Sign Up</span></a>
+          </li>
+        </ul>
+        <div class="social_icons wow fadeInUp animated">
+          <ul>
+            <li class="d-inline-block">
+              <a href="#" class="fs24" target="_blank">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="d-inline-block">
+              <a href="#" class="fs24" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="d-inline-block">
+              <a href="#" class="fs24" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="d-inline-block">
+              <a href="#" class="fs24" target="_blank">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </footer>
     <div class="copyright">
-        <div class="container"> © Copyright Lync Digital School Pvt. Ltd | 2019 |<a href="privacy-policy.html"> Privacy Policy</a> </div>
+      <div class="container">
+        © Copyright Lync Digital School Pvt. Ltd | 2019 |<a
+          href="privacy-policy.html"
+        >
+          Privacy Policy</a
+        >
+      </div>
     </div>
-
 
     <!--
     <script src="css/Jobpage/jquery.min.js"></script>
@@ -756,6 +1486,6 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main-home.js"></script>
     <script src="js/getin-form.js"></script>
-</body>
-
+    <script src="js/modal.js"></script>
+  </body>
 </html>
