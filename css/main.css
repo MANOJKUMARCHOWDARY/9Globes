@@ -1270,7 +1270,7 @@ header.fixed-header {
 }
 
 #main_slider .item {
-    height: 87vh;
+    height: 100vh;
 }
 
 .slideone {
@@ -1449,8 +1449,8 @@ header.fixed-header {
     position: absolute;
     bottom: -15px;
     left: 50%;
-    margin-left: -125px;
-    min-width: 250px;
+    margin-left: -110px;
+    min-width: 215px;
 }
 
 .all_cource_link {
@@ -4149,7 +4149,7 @@ header.fixed-header {
     .cources-img span {
         left: 10px;
         margin: 0;
-        /* right: 10px; */
+        right: 10px; 
         min-width: auto;
     }
 
