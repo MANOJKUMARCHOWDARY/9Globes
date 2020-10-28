@@ -59,7 +59,8 @@
                             </li>
                             <!--                            <li class="menu"><a href="login.html" itemprop="url" target="_blank"><span itemprop="name">Sign In</span></a></li>-->
                             <li class="get_link">
-                                <a href="#" data-toggle="modal" data-target="#get_trained" itemprop="url">
+                                <a href="#" onclick="getSkilled()" data-toggle="modal" data-target="#get_trained"
+                                    itemprop="url">
                                     <span itemprop="name">Get Skilled</span>
                                 </a>
                             </li>
@@ -102,10 +103,10 @@
                                 <div class="train-mid duration fadeInRight animated"><strong>3 Months</strong> Duration
                                 </div>
                             </div>
-                            <div class="circ-btn blbtn"><a href="#" data-toggle="modal" data-target="#get_trained"
-                                    class="fadeInUp animated">SCHEDULE
-                                    ONLINE DEMO </a><a href="#" data-toggle="modal" data-target="#get_trained"
-                                    class="fadeInUp animated">Contact
+                            <div class="circ-btn blbtn"><a href="#" onclick="scheduledemo()" data-toggle="modal"
+                                    data-target="#get_trained" class="fadeInUp animated">SCHEDULE
+                                    ONLINE DEMO </a><a href="#" onclick="contactUs()" data-toggle="modal"
+                                    data-target="#get_trained" class="fadeInUp animated">Contact
                                     Course Adviser</a></div>
                         </div>
                         <div class="col-lg-5 col-md-5 col-sm-12 course-overview view-2">
@@ -221,7 +222,8 @@
                                                 class="weekdayicon"><strong>8 AM (IST)</strong> 1hr-1:30hr / Per Session
                                         </li>
                                     </ul>
-                                    <a href="#" class="reqbtn" data-toggle="modal" data-target="#get_trained">Get Course
+                                    <a href="#" onclick="getCourseFee()" class="reqbtn" data-toggle="modal"
+                                        data-target="#get_trained">Get Course
                                         Fees</a>
                                 </div>
                             </div>
@@ -238,7 +240,8 @@
                                                 class="weekdayicon"><strong>10 AM (IST)</strong> 1hr-1:30hr / Per
                                             Session</li>
                                     </ul>
-                                    <a href="#" class="reqbtn" data-toggle="modal" data-target="#get_trained">Get Course
+                                    <a href="#" onclick="getCourseFee()" class="reqbtn" data-toggle="modal"
+                                        data-target="#get_trained">Get Course
                                         Fees</a>
                                 </div>
                             </div>
@@ -256,7 +259,8 @@
                                                 class="weekdayicon"><strong>12 PM (IST)</strong> 1hr-1:30hr / Per
                                             Session</li>
                                     </ul>
-                                    <a href="#" class="reqbtn" data-toggle="modal" data-target="#get_trained">Get Course
+                                    <a href="#" onclick="getCourseFee()" class="reqbtn" data-toggle="modal"
+                                        data-target="#get_trained">Get Course
                                         Fees</a>
                                 </div>
                             </div>
@@ -274,7 +278,8 @@
                                                 class="weekdayicon"><strong>8 AM (IST)</strong> 1hr-1:30hr / Per Session
                                         </li>
                                     </ul>
-                                    <a href="#" class="reqbtn" data-toggle="modal" data-target="#get_trained">Get Course
+                                    <a href="#" onclick="getCourseFee()" class="reqbtn" data-toggle="modal"
+                                        data-target="#get_trained">Get Course
                                         Fees</a>
                                 </div>
                             </div>
@@ -285,7 +290,8 @@
                     <div class="col-lg-3 col-md-3 col-sm-12 text-center course-overview">
                         <img src="images/upcomebook.svg" alt="AWS Upcoming Batch Schedule">
                         <h6>Can’t find a batch you were looking for?</h6>
-                        <a href="#" class="reqbtn" data-toggle="modal" data-target="#get_trained">Request A Batch</a>
+                        <a href="#" onclick="requestABatch()" class="reqbtn" data-toggle="modal"
+                            data-target="#get_trained">Request A Batch</a>
                     </div>
                 </div>
 
@@ -1069,11 +1075,14 @@
                         <div> <img src="images/pyspark.svg" alt="tools"> </div>
                         <div> <img src="images/slack.png" alt="tools"> </div>
                     </div>
-                    <div class="row justify-content-center cursorPointer mt-5"> <a href="#" data-toggle="modal"
-                            data-target="#get_trained" class="download-btn wow fadeInDown animated hvr-icon-up"
+                    <div class="row justify-content-center cursorPointer mt-5"> <a href="#" onclick="curriculum()"
+                            data-toggle="modal" data-target="#get_trained"
+                            class="download-btn wow fadeInDown animated hvr-icon-up"
                             style="visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;">
                             <span class="download-icon"><img src="images/curriculum_dwnld_icon.png" alt="Download"
-                                    class="hvr-icon"> </span> <span class="download-text"> <strong>Download</strong>
+                                    class="hvr-icon"> </span>
+                            <span class="download-text">
+                                <strong>Download</strong>
                                 <em>curriculum</em> </span> </a> </div>
                 </div>
             </div>
@@ -1424,7 +1433,7 @@
                                     or employee trainees upon successful completion of the course which will encourage
                                     and add to trainee’s resume to explore a lot of opportunities beyond position
                                 </div>
-                                <div class="getcert"><a href=#" class="" data-toggle="modal"
+                                <div class="getcert"><a href="#" onclick="getCertificate()" class="" data-toggle="modal"
                                         data-target="#get_trained">Get Certified</a></div>
                             </div>
                         </div>
@@ -1653,10 +1662,11 @@
                                                     <ul>
                                                         <li class="hvr-icon-up"><a href="coursepage.html"
                                                                 data-toggle="modal" data-target="#get_trained"> <img
-                                                                    src="images/pdf-download.png" alt="Curriculum"
-                                                                    class="hvr-icon"> <span>Curriculum</span> </a></li>
+                                                                    src="c" alt="Curriculum" class="hvr-icon">
+                                                                <span>Curriculum</span> </a></li>
                                                         <li class="hvr-icon-up"><a href="coursepage.html#"
-                                                                data-toggle="modal" data-target="#get_trained"> <img
+                                                                onclick="enrollNow()" class="enroll" data-toggle="modal"
+                                                                data-target="#get_trained"> <img
                                                                     src="images/enroll_here.png" alt="Enroll Now"
                                                                     class="hvr-icon"> <span>Enroll Now</span> </a></li>
                                                     </ul>
@@ -1674,11 +1684,13 @@
                                                 <div class="cource-card-cnt">
                                                     <h4>Python</h4>
                                                     <ul>
-                                                        <li class="hvr-icon-up"><a href="#" data-toggle="modal"
+                                                        <li class="hvr-icon-up"><a href="#" onclick="curriculum()"
+                                                                class="curriculum" data-toggle="modal"
                                                                 data-target="#get_trained"> <img
                                                                     src="images/pdf-download.png" alt="Curriculum"
                                                                     class="hvr-icon"> <span>Curriculum</span> </a></li>
-                                                        <li class="hvr-icon-up"><a href="#" data-toggle="modal"
+                                                        <li class="hvr-icon-up"><a href="#" onclick="enrollNow()"
+                                                                class="enroll" data-toggle="modal"
                                                                 data-target="#get_trained"> <img
                                                                     src="images/enroll_here.png" alt="Enroll Now"
                                                                     class="hvr-icon"> <span>Enroll Now</span> </a></li>
@@ -1697,11 +1709,13 @@
                                                 <div class="cource-card-cnt">
                                                     <h4>Data Analysis</h4>
                                                     <ul>
-                                                        <li class="hvr-icon-up"><a href="#" data-toggle="modal"
+                                                        <li class="hvr-icon-up"><a href="#" onclick="curriculum()"
+                                                                class="curriculum" data-toggle="modal"
                                                                 data-target="#get_trained"> <img
                                                                     src="images/pdf-download.png" alt="Curriculum"
                                                                     class="hvr-icon"> <span>Curriculum</span> </a></li>
-                                                        <li class="hvr-icon-up"><a href="#" data-toggle="modal"
+                                                        <li class="hvr-icon-up"><a href="#" onclick="enrollNow()"
+                                                                class="enroll" data-toggle="modal"
                                                                 data-target="#get_trained"> <img
                                                                     src="images/enroll_here.png" alt="Enroll Now"
                                                                     class="hvr-icon"> <span>Enroll Now</span> </a></li>
@@ -1719,11 +1733,13 @@
                                                 <div class="cource-card-cnt">
                                                     <h4>DevOps</h4>
                                                     <ul>
-                                                        <li class="hvr-icon-up"><a href="#" data-toggle="modal"
+                                                        <li class="hvr-icon-up"><a href="#" onclick="curriculum()"
+                                                                class="curriculum" data-toggle="modal"
                                                                 data-target="#get_trained"> <img
                                                                     src="images/pdf-download.png" alt="Curriculum"
                                                                     class="hvr-icon"> <span>Curriculum</span> </a></li>
-                                                        <li class="hvr-icon-up"><a href="#" data-toggle="modal"
+                                                        <li class="hvr-icon-up"><a href="#" onclick="enrollNow()"
+                                                                class="enroll" data-toggle="modal"
                                                                 data-target="#get_trained"> <img
                                                                     src="images/enroll_here.png" alt="Enroll Now"
                                                                     class="hvr-icon"> <span>Enroll Now</span> </a></li>
@@ -1741,11 +1757,13 @@
                                                 <div class="cource-card-cnt">
                                                     <h4>Python</h4>
                                                     <ul>
-                                                        <li class="hvr-icon-up"><a href="#" data-toggle="modal"
+                                                        <li class="hvr-icon-up"><a href="#" onclick="curriculum()"
+                                                                class="curriculum" data-toggle="modal"
                                                                 data-target="#get_trained"> <img
                                                                     src="images/pdf-download.png" alt="Curriculum"
                                                                     class="hvr-icon"> <span>Curriculum</span> </a></li>
-                                                        <li class="hvr-icon-up"><a href="#" data-toggle="modal"
+                                                        <li class="hvr-icon-up"><a href="#" onclick="enrollNow()"
+                                                                class="enroll" data-toggle="modal"
                                                                 data-target="#get_trained"> <img
                                                                     src="images/enroll_here.png" alt="Enroll Now"
                                                                     class="hvr-icon"> <span>Enroll Now</span> </a></li>
@@ -1764,11 +1782,13 @@
                                                 <div class="cource-card-cnt">
                                                     <h4>Data Analysis</h4>
                                                     <ul>
-                                                        <li class="hvr-icon-up"><a href="#" data-toggle="modal"
+                                                        <li class="hvr-icon-up"><a href="#" onclick="curriculum()"
+                                                                class="curriculum" data-toggle="modal"
                                                                 data-target="#get_trained"> <img
                                                                     src="images/pdf-download.png" alt="Curriculum"
                                                                     class="hvr-icon"> <span>Curriculum</span> </a></li>
-                                                        <li class="hvr-icon-up"><a href="#" data-toggle="modal"
+                                                        <li class="hvr-icon-up"><a href="#" onclick="enrollNow()"
+                                                                class="enroll" data-toggle="modal"
                                                                 data-target="#get_trained"> <img
                                                                     src="images/enroll_here.png" alt="Enroll Now"
                                                                     class="hvr-icon"> <span>Enroll Now</span> </a></li>
@@ -1786,11 +1806,13 @@
                                                 <div class="cource-card-cnt">
                                                     <h4>DevOps</h4>
                                                     <ul>
-                                                        <li class="hvr-icon-up"><a href="#" data-toggle="modal"
+                                                        <li class="hvr-icon-up"><a href="#" onclick="curriculum()"
+                                                                class="curriculum" data-toggle="modal"
                                                                 data-target="#get_trained"> <img
                                                                     src="images/pdf-download.png" alt="Curriculum"
                                                                     class="hvr-icon"> <span>Curriculum</span> </a></li>
-                                                        <li class="hvr-icon-up"><a href="#" data-toggle="modal"
+                                                        <li class="hvr-icon-up"><a href="#" onclick="enrollNow()"
+                                                                class="enroll" data-toggle="modal"
                                                                 data-target="#get_trained"> <img
                                                                     src="images/enroll_here.png" alt="Enroll Now"
                                                                     class="hvr-icon"> <span>Enroll Now</span> </a></li>
@@ -1808,11 +1830,13 @@
                                                 <div class="cource-card-cnt">
                                                     <h4>Python</h4>
                                                     <ul>
-                                                        <li class="hvr-icon-up"><a href="#" data-toggle="modal"
+                                                        <li class="hvr-icon-up"><a href="#" onclick="curriculum()"
+                                                                class="curriculum" data-toggle="modal"
                                                                 data-target="#get_trained"> <img
                                                                     src="images/pdf-download.png" alt="Curriculum"
                                                                     class="hvr-icon"> <span>Curriculum</span> </a></li>
-                                                        <li class="hvr-icon-up"><a href="#" data-toggle="modal"
+                                                        <li class="hvr-icon-up"><a href="#" onclick="enrollNow()"
+                                                                class="enroll" data-toggle="modal"
                                                                 data-target="#get_trained"> <img
                                                                     src="images/enroll_here.png" alt="Enroll Now"
                                                                     class="hvr-icon"> <span>Enroll Now</span> </a></li>
@@ -1831,11 +1855,13 @@
                                                 <div class="cource-card-cnt">
                                                     <h4>Data Analysis</h4>
                                                     <ul>
-                                                        <li class="hvr-icon-up"><a href="#" data-toggle="modal"
+                                                        <li class="hvr-icon-up"><a href="#" onclick="curriculum()"
+                                                                class="curriculum" data-toggle="modal"
                                                                 data-target="#get_trained"> <img
                                                                     src="images/pdf-download.png" alt="Curriculum"
                                                                     class="hvr-icon"> <span>Curriculum</span> </a></li>
-                                                        <li class="hvr-icon-up"><a href="#" data-toggle="modal"
+                                                        <li class="hvr-icon-up"><a href="#" onclick="enrollNow()"
+                                                                class="enroll" data-toggle="modal"
                                                                 data-target="#get_trained"> <img
                                                                     src="images/enroll_here.png" alt="Enroll Now"
                                                                     class="hvr-icon"> <span>Enroll Now</span> </a></li>
@@ -2623,7 +2649,8 @@
                 you up-skill, stay relevant &amp; get noticed.
 
             </p>
-            <a href="#" class="joinow" data-toggle="modal" data-target="#get_trained">Book A Free Online Demo</a>
+            <a href="#" onclick="scheduledemo()" class="joinow" data-toggle="modal" data-target="#get_trained">Book A
+                Free Online Demo</a>
         </div>
     </div>
     <footer class="footer">

@@ -7,7 +7,7 @@
             $subject = 'nineGlobal Skilled Person Details';
 
 
-            $name = $_POST['name'];
+            $name = $_POST['username'];
             $phoneNumber = $_POST['phone'];
             $email = $_POST['email'];
             $userMessage = $_POST['message'];
@@ -47,13 +47,13 @@
 // echo "<script>alert('hello')</script>";
 
 
-$conn = new mysqli('localhost','root','','skilled');
+$conn = new mysqli('localhost','root','','ninegloab');
 if($conn==null){
     echo "<script>alert('We are facing some issue with serve please try again')</script>";
 }
 else {
  
-    $insertData = "INSERT INTO resister(full_name,email,phone_number) VALUES('$name','$email','$phoneNumber')";
+    $insertData = "INSERT INTO skilled(full_name,email,phone_number) VALUES('$name','$email','$phoneNumber')";
             if($conn->query($insertData)=== TRUE){
 
 

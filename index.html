@@ -53,7 +53,8 @@
                             </li>
                             <!--                            <li class="menu"><a href="login.html" itemprop="url" target="_blank"><span itemprop="name">Sign In</span></a></li>-->
                             <li class="get_link">
-                                <a href="#" data-toggle="modal" data-target="#get_trained" itemprop="url">
+                                <a href="#" id="getskilled" onclick="getSkilled()" data-toggle="modal"
+                                    data-target="#get_trained" itemprop="url">
                                     <span itemprop="name">Get Skilled</span>
                                 </a>
                             </li>
@@ -216,14 +217,16 @@
                             <h4>AWS</h4>
                             <ul>
                                 <li>
-                                    <a href="#" data-toggle="modal" data-target="#get_trained">
+                                    <a href="#" data-toggle="modal" class="curriculum" onclick="curriculum()"
+                                        data-target="#get_trained">
                                         <img src="images/pdf-download.png" alt="9Golbes Technologies"
                                             title="Download monochrome- Digital Lync Training Courses Curriculum" />
                                         <span>Curriculum</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" data-toggle="modal" data-target="#get_trained">
+                                    <a href="#" data-toggle="modal" class="enroll" onclick="enrollNow()"
+                                        data-target="#get_trained">
                                         <img src="images/enroll_here.png" alt="9Golbes Technologies Training Courses" />
                                         <span>Enroll Now</span>
                                     </a>
@@ -243,14 +246,16 @@
                             <h4>Python</h4>
                             <ul>
                                 <li>
-                                    <a href="#" data-toggle="modal" data-target="#get_trained">
+                                    <a href="#" data-toggle="modal" class="curriculum" onclick="curriculum()"
+                                        data-target=" #get_trained">
                                         <img src="images/pdf-download.png" alt="9Golbes Technologies"
                                             title="9Golbes Technologies" />
                                         <span>Curriculum</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" data-toggle="modal" data-target="#get_trained">
+                                    <a href="#" data-toggle="modal" class="enroll" onclick="enrollNow()"
+                                        data-target="#get_trained">
                                         <img src="images/enroll_here.png" alt="9Golbes Technologies"
                                             title="9Golbes Technologies" />
                                         <span>Enroll Now</span>
@@ -271,14 +276,16 @@
                             <h4>Devops</h4>
                             <ul>
                                 <li>
-                                    <a href="#" data-toggle="modal" data-target="#get_trained">
+                                    <a href="#" data-toggle="modal" class="curriculum" onclick="curriculum()"
+                                        data-target=" #get_trained">
                                         <img src="images/pdf-download.png" alt="9Golbes Technologies"
                                             title="9Golbes Technologies" />
                                         <span>Curriculum</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" data-toggle="modal" data-target="#get_trained">
+                                    <a href="#" data-toggle="modal" class="enroll" onclick="enrollNow()"
+                                        data-target="#get_trained">
                                         <img src="images/enroll_here.png" alt="9Golbes Technologies"
                                             title="9Golbes Technologies" />
                                         <span>Enroll Now</span>
@@ -311,14 +318,16 @@
                             <h4>Job Ready Program</h4>
                             <ul>
                                 <li>
-                                    <a href="#" data-toggle="modal" data-target="#get_trained">
+                                    <a href="#" data-toggle="modal" class="curriculum" onclick="curriculum()"
+                                        data-target="#get_trained">
                                         <img src="images/pdf-download.png" alt="9Golbes Technologies"
                                             title="9Golbes Technologies" />
                                         <span>Curriculum</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" data-toggle="modal" data-target="#get_trained">
+                                    <a href="#" data-toggle="modal" class="enroll" onclick="enrollNow()"
+                                        data-target="#get_trained">
                                         <img src="images/enroll_here.png" alt="9Golbes Technologies" />
                                         <span>Enroll Now</span>
                                     </a>
@@ -339,13 +348,15 @@
                             <h4>Fullstack Training Masters</h4>
                             <ul>
                                 <li>
-                                    <a href="#" data-toggle="modal" data-target="#get_trained">
+                                    <a href="#" data-toggle="modal" class="curriculum" onclick="curriculum()"
+                                        data-target="#get_trained">
                                         <img src="images/pdf-download.png" alt="9Golbes Technologies" />
                                         <span>Curriculum</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" data-toggle="modal" data-target="#get_trained">
+                                    <a href="#" data-toggle="modal" class="enroll" onclick="enrollNow()"
+                                        data-target="#get_trained">
                                         <img src="images/enroll_here.png" alt="9Golbes Technologies" />
                                         <span>Enroll Now</span>
                                     </a>
@@ -366,14 +377,16 @@
                             <h4>CloudOps Masters</h4>
                             <ul>
                                 <li>
-                                    <a href="#" data-toggle="modal" data-target="#get_trained">
+                                    <a href="#" data-toggle="modal" class="curriculum" onclick="curriculum()"
+                                        data-target="#get_trained">
                                         <img src="images/pdf-download.png" alt="9Golbes Technologies"
                                             title="9Golbes Technologies" />
                                         <span>Curriculum</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" data-toggle="modal" data-target="#get_trained">
+                                    <a href="#" data-toggle="modal" class="enroll" onclick="enrollNow()"
+                                        data-target="#get_trained">
                                         <img src="images/enroll_here.png" alt="9Golbes Technologies"
                                             title="9Golbes Technologies" />
                                         <span>Enroll Now</span>
@@ -545,8 +558,8 @@
                         leaders upskilled. Feel free to contact us. We will ensure that
                         your team is upskilled in line with your specific needs.
                     </p>
-                    <div class="primaryButton hvr-icon-up wow fadeInUp animated" data-toggle="modal"
-                        data-target="#get_trained">
+                    <div class="primaryButton hvr-icon-up wow fadeInUp animated" onclick="submitRequest()"
+                        data-toggle="modal" data-target="#get_trained">
                         <span class="primaryButtonText"> Submit Request </span>
                         <span>
                             <img src="images/send.png" alt="9Golbes Technologies" title="9Golbes Technologies"
