@@ -589,7 +589,7 @@ img {
 }
 
 .faq_mid {
-  width: 70%;
+  width: 87.5%;
   padding-left: 0;
   margin: 0 auto;
 }
@@ -3426,6 +3426,10 @@ header.fixed-header {
     width: 60% !important;
   }
 
+  .footer-span-hide{
+    display: none;
+  }
+
   .slideone,
   .slidethree,
   .slidetwo {
@@ -3811,7 +3815,7 @@ header.fixed-header {
   }
 
   .cource-mid {
-    width: auto;
+    width: 77.5%;
     margin: 0 auto;
   }
 
@@ -4210,7 +4214,7 @@ header.fixed-header {
   .faq_col .card{
     margin: 0 10px 15px;
   }
-  
+
   .choose-row ul li{
     width: 60% !;
   }
@@ -4389,7 +4393,7 @@ header.fixed-header {
   }
 
   .faq_mid {
-    width: 70%;
+    /* width: 70%; */
     padding-left: 20px;
   }
 
@@ -6550,6 +6554,12 @@ body {
 
   .cources_page.related_col .pro-card .blockchain_cource p {
     min-height: 140px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .faq_mid{
+    width: 80% !important;
   }
 }
 
