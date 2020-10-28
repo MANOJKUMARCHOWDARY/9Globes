@@ -621,8 +621,7 @@ img {
 .updown_arrow {
     position: absolute;
     top: 5px;
-    /*    left: 120%;*/
-    right: 40px;
+       right: 5%;
     font-size: 40px;
 }
 
@@ -3900,11 +3899,11 @@ header.fixed-header {
   }
 
   .slider-content {
-    padding: 140px 5px 0 !important;
+    padding: 100px 5px 0 !important;
   }
 
   .heading-1 {
-    font-size: 21px;
+    font-size: 30px;
   }
 
   .slider-content ul li {
@@ -4006,7 +4005,7 @@ header.fixed-header {
   }
 
   .heading-3 {
-    font-size: 1.7em !important;
+    font-size: 2.7em !important;
   }
 
   .heading-4 {
@@ -4077,7 +4076,7 @@ header.fixed-header {
 
   footer ul li {
     display: block;
-    padding: 5px;
+    padding: 5px 15px;
   }
 
   .copyright {
@@ -4156,9 +4155,8 @@ header.fixed-header {
 
 
     .cources-img span {
-        left: 10px;
+        left: 25%;
         margin: 0;
-        right: 10px;
         min-width: auto;
     }
 
@@ -4206,7 +4204,11 @@ header.fixed-header {
     .collapse {
         display: none;
     }
-}
+
+ 
+  
+  
+  }
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .faq_col .card{
@@ -4226,6 +4228,8 @@ header.fixed-header {
     }
   span.btn {
     font-size: 14px;
+    white-space: initial;
+    width: 200px;
   }
   .cource-card ul li:nth-child(1) {
     border-right: none;
@@ -4240,7 +4244,7 @@ header.fixed-header {
     margin-bottom: 0;
     background-color: rgba(0, 0, 0, 0.03);
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-    width: 70vw;
+    /* width: 70vw; */
   }
 
   .related_col .owl-prev {
@@ -4267,7 +4271,8 @@ header.fixed-header {
     font-size: 22px;
     font-weight: 400;
     text-align: center;
-    min-height: 50px;
+    /* min-height: 50px; */
+    padding: 15px;
   }
 
   .case_right {
@@ -4286,9 +4291,9 @@ header.fixed-header {
     margin: 0;
   }
 
-  .cources-img img {
+  /* .cources-img img {
     min-height: 180px;
-  }
+  } */
 
   .cource-card-cnt h4 {
     font-size: 15px;
@@ -4441,11 +4446,12 @@ header.fixed-header {
   .pro-card-cnt h4 {
     display: block;
     display: -webkit-box;
-    max-width: 200px;
+    /* max-width: 200px; */
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-bottom: 0;
   }
 
   .awscol .testmonial_mid {
@@ -5499,8 +5505,15 @@ body.game-development-col .copyright a {
   margin: 0 0 60px;
   text-transform: uppercase;
 }
+.toolsplotform-imgs div{
+  width: 20%;
+  padding: 20px;
+}
+.toolsplotform-imgs img{
+  width: 100%;
+}
 
-.toolsplotform ul {
+/* .toolsplotform ul {
   margin: 0;
   padding: 0 0 40px;
   display: inline-block;
@@ -5511,7 +5524,7 @@ body.game-development-col .copyright a {
 .toolsplotform ul li {
   display: inline-block;
   padding: 0 20px;
-}
+} */
 
 .toolsplotform p {
   font-weight: 600;
@@ -5551,7 +5564,7 @@ body.game-development-col .copyright a {
 }
 
 .awscol .testmonial_mid {
-  margin: 0 230px;
+  margin: 0 230px!important;
   padding: 40px 50px 60px;
   background: #fff;
   text-align: center;
@@ -5802,12 +5815,14 @@ body {
   color: #fff;
 }
 
-.heading-1 span {
+.heading-1-span {
   font-size: 20px;
 }
 
 .cources_page .courceminh .pro-card .cource_count p {
   min-height: 140px !important;
+  max-height: 140px !important;
+  overflow: auto;
 }
 
 .heading-1,
@@ -6483,7 +6498,7 @@ body {
     margin-bottom: 0;
     background-color: rgba(0, 0, 0, 0.03);
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-    width: 58vw;
+    /* width: 58vw; */
   }
 
   .header .navbar-nav li a {
@@ -6552,11 +6567,11 @@ body {
     
   .owl-stage-outer .owl-item.active.center .item {
     filter: grayscale(0) !important;
-    margin-left: -90px;
+    /* margin-left: -90px; */
   }
 
   .owl-item.active {
-    width: 310px !important;
+    width: 350px !important;
   }
 
   .title-4 {
@@ -7489,7 +7504,7 @@ body {
   padding: 10px 0;
   position: absolute;
   font-weight: 600;
-  top: 48%;
+  top: 52%;
   background: #fff;
   font-size: 25px;
   left: -19px;
@@ -7751,6 +7766,95 @@ body {
 /*    width: 100%;*/
     height: 300px;
 }
+@media (min-width: 1200px){
+.container {
+    max-width: 1240px;
+}
+}
 
+@media (min-width:724px) and (max-width:1024px){
+  #main_slider{
+    height: 65vh;
+  }
+  #main_slider .item{
+    height: 65vh;
+  }
+  span.btn{
+    width: 150px;
+  }
+  .cources-img span{
+    left: 15%;
+  }
+  .pro-card{
+    height: 100%;
+  }
+  .header .navbar-nav li a{
+    padding: 1.3rem 0;
+  }
+  .course-overview{
+    flex: 0 0 100%; 
+      max-width: 100%; 
+  }
+  .cource-prev h4{
+    visibility: hidden!important;
+  }
+  .view-2{
+    order: 1;
+  }
+  .view-1{
+    order: 2;
+  }
+  .batchschedule .col-md-3{
+    flex: 0 0 50%; 
+      max-width: 50%; 
+      margin-bottom: 20px;
+  }
+  .cource-mid{
+    width: 100%;
+  }
+  .faq_mid{
+    width: 100%;
+  }
+  .related_col .cources-img span{
+    left: 25%;
+    width: 200px;
+  }
+  .awscol .testmonial_mid{
+    margin: 0!important;
+  }
+  .ftrtop p{
+    width: 100%;
+    margin: 0;
+  }
+  .train-col{
+    margin-bottom: 20px;
+  }
+  .datascience_col .train-mid{
+    width: 25%;
+  }
+}
 
-
+@media (max-width:724px){
+  .toolsplotform-imgs div{
+    width: 25%;
+    padding: 20px;
+  }
+  .pro-card-cnt h4{
+    min-height: 60px;
+  }
+  .faq_mid{
+    width: 100%;
+  }
+  .faq_col .container{
+    padding: 0px;
+  }
+  .related_col .owl-prev{
+    left: 0;
+  }
+  .related_col .owl-next{
+    right: 0;
+  }
+  .awscol .testmonial_mid{
+    margin: 0 auto!important;
+  }
+}
